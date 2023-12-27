@@ -64,3 +64,6 @@ add_subdirectory(googletest)
 enable_testing()
 
 target_link_libraries(test_version GTest::gtest_main)
+
+include(GoogleTest)
+gtest_discover_tests(test_version)
