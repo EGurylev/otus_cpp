@@ -1,1 +1,1 @@
-# Шаблон настройки GitHub Actions
+# Репозиторий для домашних работ по курсу C++ Developer. Professional
