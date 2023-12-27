@@ -1,11 +1,9 @@
 cmake_minimum_required(VERSION 3.10)
 
-set(PATCH_VERSION "5" CACHE INTERNAL "Patch version")
+set(PATCH_VERSION "1" CACHE INTERNAL "Patch version")
 set(PROJECT_VESRION 0.0.${PATCH_VERSION})
 
 project(helloworld VERSION ${PROJECT_VESRION})
-
-find_package(Boost COMPONENTS unit_test_framework REQUIRED)
 
 configure_file(version.h.in version.h)
 
@@ -20,18 +18,12 @@ set_target_properties(helloworld_cli helloworld test_version PROPERTIES
 target_include_directories(helloworld
     PRIVATE "${CMAKE_BINARY_DIR}"
 )
-set_target_properties(test_version PROPERTIES
-    COMPILE_DEFINITIONS BOOST_TEST_DYN_LINK
-    INCLUDE_DIRECTORIES ${Boost_INCLUDE_DIR}
-)
 
 target_link_libraries(helloworld_cli PRIVATE
     helloworld
 )
-target_link_libraries(test_version
-    ${Boost_LIBRARIES}
-    helloworld
-)
+
+target_link_libraries(test_version helloworld)
 
 if (MSVC)
     target_compile_options(helloworld_cli PRIVATE
@@ -55,8 +47,6 @@ else ()
     )
 endif()
 
-
-
 install(TARGETS helloworld_cli RUNTIME DESTINATION bin)
 
 set(CPACK_GENERATOR DEB)
@@ -69,6 +59,17 @@ set(CPACK_PACKAGE_CONTACT evgeniy.gurilev@gmail.com)
 
 include(CPack)
 
-enable_testing()
+include(FetchContent)
+FetchContent_Declare(
+  googletest
+  URL https://github.com/google/googletest/archive/03597a01ee50ed33e9dfd640b249b4be3799d395.zip
+)
+# For Windows: Prevent overriding the parent project's compiler/linker settings
+set(gtest_force_shared_crt ON CACHE BOOL "" FORCE)
+FetchContent_MakeAvailable(googletest)
 
-add_test(test_version test_version)
+enable_testing()
+target_link_libraries(test_version GTest::gtest_main)
+
+include(GoogleTest)
+gtest_discover_tests(test_version)
