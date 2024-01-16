@@ -33,5 +33,3 @@ else ()
         -Wall -Wextra -pedantic -Werror
     )
 endif()
-
-install(TARGETS helloworld_cli RUNTIME DESTINATION bin)
