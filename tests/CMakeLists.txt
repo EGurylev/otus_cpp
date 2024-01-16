@@ -8,8 +8,6 @@ target_link_libraries(unittest helloworld ip_filter_lib)
 
 add_subdirectory(googletest)
 
-enable_testing()
-
 target_link_libraries(unittest GTest::gtest_main)
 
 include(GoogleTest)

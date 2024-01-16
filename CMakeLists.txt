@@ -18,5 +18,8 @@ set(CPACK_PACKAGE_VERSION_MINOR "${PROJECT_VERSION_MINOR}")
 set(CPACK_PACKAGE_VERSION_PATCH "${PROJECT_VERSION_PATCH}")
 
 set(CPACK_PACKAGE_CONTACT evgeniy.gurilev@gmail.com)
+set(CPACK_PACKAGE_NAME ip_filter)
 
 include(CPack)
+
+enable_testing()
