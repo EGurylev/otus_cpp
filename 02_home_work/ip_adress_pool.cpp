@@ -21,7 +21,9 @@ void IPAdressPool::read(std::istream& is) {
     for(std::string line; std::getline(is, line);)
     {
         const auto adress = convert(line.substr(0, line.find_first_of("\t")));
-        pool_.push_back(adress);
+        if (adress) {
+            pool_.push_back(adress.value());
+        }
     }
 }
 
@@ -42,18 +44,23 @@ IPAdressPool::filter(std::function<bool(const IPAdress&)> pred) {
     return pool_filtered;
 }
 
-IPAdress IPAdressPool::convert(std::string&& str) {
-    IPAdress adress;
-    std::istringstream is(str);
+std::optional<IPAdress> IPAdressPool::convert(std::string&& str) {
+    std::optional<IPAdress> adress {IPAdress{}};
+    std::istringstream is {str};
     std::string octet;
-    for (int i = 0; i < 4; ++i) {
-        getline(is, octet, '.');
-        int number = stoi(octet);
-        if (number > std::numeric_limits<uint8_t>::max()) {
-            throw std::overflow_error("Value " + std::to_string(number) + \
-             " is outside of 0-255 range");
+    try {
+        for (int i = 0; i < 4; ++i) {
+            if (getline(is, octet, '.')) {
+                int number = std::stoi(octet);
+                if (number >= 0 && number <= std::numeric_limits<uint8_t>::max()) {
+                    adress.value()[i] = static_cast<uint8_t>(number);
+                }
+                else return {};
+            }
+            else return {};
         }
-        adress[i] = static_cast<uint8_t>(number);
     }
+    catch (std::logic_error &ex) { return {}; }
+
     return adress;
 }

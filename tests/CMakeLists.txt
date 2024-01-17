@@ -1,5 +1,9 @@
 add_executable(unittest test_version.cpp test_ip_adress.cpp)
 
+target_compile_options(unittest PRIVATE
+        -Wall -Wextra -pedantic -Werror
+)
+
 target_include_directories(unittest
     PRIVATE "${CMAKE_SOURCE_DIR}/01_home_work"
     PRIVATE "${CMAKE_SOURCE_DIR}/02_home_work"

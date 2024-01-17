@@ -2,6 +2,7 @@
 #include <iostream>
 #include <string>
 #include <vector>
+#include <optional>
 #include <array>
 #include <algorithm>
 
@@ -19,7 +20,7 @@ public:
     IPAdressPool& print();
 
 private:
-    IPAdress convert(std::string&& str);
+    std::optional<IPAdress> convert(std::string&& str);
     void push(const IPAdress& adress);
     std::vector<IPAdress> pool_;
 };

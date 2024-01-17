@@ -1,6 +1,6 @@
 #include "ip_adress_pool.h"
 
-int main(int argc, char const *argv[])
+int main()
 {
     try {
         IPAdressPool pool;

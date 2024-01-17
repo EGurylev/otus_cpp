@@ -7,4 +7,8 @@ set_target_properties(ip_filter PROPERTIES
     CXX_STANDARD_REQUIRED ON
 )
 
+target_compile_options(ip_filter PRIVATE
+        -Wall -Wextra -pedantic -Werror
+)
+
 install(TARGETS ip_filter RUNTIME DESTINATION bin)
