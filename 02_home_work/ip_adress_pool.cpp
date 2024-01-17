@@ -1,6 +1,7 @@
-#include <sstream>
-#include <limits>
 #include "ip_adress_pool.h"
+
+#include <limits>
+#include <sstream>
 
 std::ostream& operator<<(std::ostream& os, const IPAdress& arr) {
     for (int i = 0; i < 3; ++i) {
@@ -12,16 +13,17 @@ std::ostream& operator<<(std::ostream& os, const IPAdress& arr) {
 
 std::ostream& operator<<(std::ostream& os, const std::vector<IPAdress>& pool) {
     for (const auto& adress : pool) {
-        os << adress << "\n";
+        os << adress << std::endl;
     }
     return os;
 }
 
 void IPAdressPool::read(std::istream& is) {
-    for(std::string line; std::getline(is, line);)
-    {
-        const auto adress = convert(line.substr(0, line.find_first_of("\t")));
-        pool_.push_back(adress);
+    for (std::string line; std::getline(is, line);) {
+        const auto adress{convert(line.substr(0, line.find_first_of("\t")))};
+        if (adress) {
+            pool_.push_back(adress.value());
+        }
     }
 }
 
@@ -30,8 +32,8 @@ const std::vector<IPAdress>& IPAdressPool::sort_reverse() {
     return pool_;
 }
 
-std::vector<IPAdress>
-IPAdressPool::filter(std::function<bool(const IPAdress&)> pred) {
+std::vector<IPAdress> IPAdressPool::filter(
+    std::function<bool(const IPAdress&)> pred) {
     std::vector<IPAdress> pool_filtered;
     pool_filtered.reserve(pool_.size());
     for (const auto& adress : pool_) {
@@ -42,18 +44,27 @@ IPAdressPool::filter(std::function<bool(const IPAdress&)> pred) {
     return pool_filtered;
 }
 
-IPAdress IPAdressPool::convert(std::string&& str) {
-    IPAdress adress;
-    std::istringstream is(str);
+std::optional<IPAdress> IPAdressPool::convert(std::string&& str) {
+    std::optional<IPAdress> adress{IPAdress{}};
+    std::istringstream is{str};
     std::string octet;
-    for (int i = 0; i < 4; ++i) {
-        getline(is, octet, '.');
-        int number = stoi(octet);
-        if (number > std::numeric_limits<uint8_t>::max()) {
-            throw std::overflow_error("Value " + std::to_string(number) + \
-             " is outside of 0-255 range");
+    try {
+        for (int i = 0; i < 4; ++i) {
+            if (getline(is, octet, '.')) {
+                int number{std::stoi(octet)};
+                if (number >= std::numeric_limits<uint8_t>::min() &&
+                    number <= std::numeric_limits<uint8_t>::max()) {
+                    adress.value()[i] = static_cast<uint8_t>(number);
+                } else {
+                    return {};
+                }
+            } else {
+                return {};
+            }
         }
-        adress[i] = static_cast<uint8_t>(number);
+    } catch (std::logic_error& ex) {
+        return {};
     }
+
     return adress;
 }
