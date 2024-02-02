@@ -5,12 +5,18 @@ template <typename T, size_t N>
 class pool_allocator {
    public:
     using value_type = T;
-    using pointer = value_type*;
+    using pointer = T*;
 
-    pool_allocator() noexcept { relocate(N); }
+    pool_allocator() noexcept {
+        static_assert(N > 0);
 
-    template <typename U>
-    pool_allocator(const pool_allocator<U, N>&) noexcept {}
+        start = static_cast<pointer>(::operator new(N * sizeof(T)));
+        current = start;
+        capacity = N;
+    }
+
+    pool_allocator(const pool_allocator& other) = delete;
+    pool_allocator(const pool_allocator&& other) = delete;
 
     pointer allocate(std::size_t n) {
         const auto result{current};
@@ -18,6 +24,8 @@ class pool_allocator {
             for (size_t i{}; i < n; ++i) {
                 ++current;
             }
+        } else {
+            throw std::bad_alloc();
         }
 
         return result;
@@ -39,12 +47,6 @@ class pool_allocator {
     ~pool_allocator() { ::operator delete(start); }
 
    private:
-    void relocate(size_t new_capacity) {
-        start = static_cast<pointer>(::operator new(new_capacity * sizeof(T)));
-        current = start;
-        capacity = new_capacity;
-    }
-
     pointer start{};
     pointer current{};
     size_t capacity{};

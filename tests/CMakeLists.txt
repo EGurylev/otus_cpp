@@ -1,4 +1,4 @@
-add_executable(unittest test_version.cpp test_ip_adress.cpp)
+add_executable(unittest test_version.cpp test_ip_adress.cpp test_allocator.cpp)
 
 target_compile_options(unittest PRIVATE
         -Wall -Wextra -pedantic -Werror
@@ -7,6 +7,7 @@ target_compile_options(unittest PRIVATE
 target_include_directories(unittest
     PRIVATE "${CMAKE_SOURCE_DIR}/01_home_work"
     PRIVATE "${CMAKE_SOURCE_DIR}/02_home_work"
+    PRIVATE "${CMAKE_SOURCE_DIR}/03_home_work"
 )
 target_link_libraries(unittest helloworld ip_filter_lib)
 
