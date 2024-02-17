@@ -7,7 +7,7 @@ class pool_allocator {
     using value_type = T;
     using pointer = T*;
 
-    pool_allocator() noexcept {
+    pool_allocator() {
         static_assert(N > 0);
 
         start = static_cast<pointer>(::operator new(N * sizeof(T)));
