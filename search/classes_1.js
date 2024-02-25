@@ -1,6 +1,5 @@
 var searchData=
 [
-  ['ipadresspool_48',['IPAdressPool',['../classIPAdressPool.html',1,'']]],
-  ['is_5ftuple_5fimpl_49',['is_tuple_impl',['../structis__tuple__impl.html',1,'']]],
-  ['is_5ftuple_5fimpl_3c_20std_3a_3atuple_3c_20u_2e_2e_2e_20_3e_20_3e_50',['is_tuple_impl&lt; std::tuple&lt; U... &gt; &gt;',['../structis__tuple__impl_3_01std_1_1tuple_3_01U_8_8_8_01_4_01_4.html',1,'']]]
+  ['circle_94',['Circle',['../classview_1_1Circle.html',1,'view']]],
+  ['core_95',['Core',['../classmodel_1_1Core.html',1,'model']]]
 ];

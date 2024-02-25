@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['pool_5fallocator_51',['pool_allocator',['../classpool__allocator.html',1,'']]]
+  ['gui_96',['GUI',['../classview_1_1GUI.html',1,'view']]]
 ];

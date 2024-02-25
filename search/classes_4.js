@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['simple_5fforward_5flist_53',['simple_forward_list',['../classsimple__forward__list.html',1,'']]]
+  ['logic_100',['Logic',['../classcontroller_1_1Logic.html',1,'controller']]]
 ];

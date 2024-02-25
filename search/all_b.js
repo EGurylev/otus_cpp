@@ -1,7 +1,5 @@
 var searchData=
 [
-  ['simple_5fforward_5flist_36',['simple_forward_list',['../classsimple__forward__list.html',1,'simple_forward_list&lt; T, Allocator &gt;'],['../classsimple__forward__list.html#a468b8979c687a93855202ccca64ae0e4',1,'simple_forward_list::simple_forward_list()'],['../classsimple__forward__list.html#a2880b305bf93eba303074402744731d8',1,'simple_forward_list::simple_forward_list(const simple_forward_list &amp;other)=delete'],['../classsimple__forward__list.html#a26663446296c8a7371990ebf285ed40d',1,'simple_forward_list::simple_forward_list(simple_forward_list &amp;&amp;other)=delete']]],
-  ['simple_5fforward_5flist_2eh_37',['simple_forward_list.h',['../simple__forward__list_8h.html',1,'']]],
-  ['size_38',['size',['../classsimple__forward__list.html#a63e1481a8003b3a9ce7e78d7ab5a5057',1,'simple_forward_list']]],
-  ['sort_5freverse_39',['sort_reverse',['../classIPAdressPool.html#a34862feb367e76ce053dd90c93a632c0',1,'IPAdressPool']]]
+  ['operator_3c_3c_55',['operator&lt;&lt;',['../ip__adress__pool_8cpp.html#ade5c2eabbb47b9b36f289a0139bf664b',1,'operator&lt;&lt;(std::ostream &amp;os, const IPAdress &amp;arr):&#160;ip_adress_pool.cpp'],['../ip__adress__pool_8cpp.html#ac66fe011dac444f661a89b20a46f363e',1,'operator&lt;&lt;(std::ostream &amp;os, const std::vector&lt; IPAdress &gt; &amp;pool):&#160;ip_adress_pool.cpp'],['../ip__adress__pool_8h.html#ade5c2eabbb47b9b36f289a0139bf664b',1,'operator&lt;&lt;(std::ostream &amp;os, const IPAdress &amp;arr):&#160;ip_adress_pool.cpp'],['../ip__adress__pool_8h.html#ac66fe011dac444f661a89b20a46f363e',1,'operator&lt;&lt;(std::ostream &amp;os, const std::vector&lt; IPAdress &gt; &amp;pool):&#160;ip_adress_pool.cpp']]],
+  ['other_56',['other',['../structpool__allocator_1_1rebind.html#aa07c30b4771af2fd045e2b5e6a93bcc4',1,'pool_allocator::rebind']]]
 ];

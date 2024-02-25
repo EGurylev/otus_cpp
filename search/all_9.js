@@ -1,11 +1,9 @@
 var searchData=
 [
-  ['pointer_24',['pointer',['../classpool__allocator.html#a11890e686319df999ab74dbbd62d8550',1,'pool_allocator']]],
-  ['pool_5fallocator_25',['pool_allocator',['../classpool__allocator.html',1,'pool_allocator&lt; T, N &gt;'],['../classpool__allocator.html#abdc635e127b93b4f800797d8f9e1392b',1,'pool_allocator::pool_allocator() noexcept'],['../classpool__allocator.html#a04d9f9812384fe4dcbb7ce3616dc499b',1,'pool_allocator::pool_allocator(const pool_allocator &amp;other)=delete'],['../classpool__allocator.html#ab2aee5585238652a674e0323bd96c3e3',1,'pool_allocator::pool_allocator(const pool_allocator &amp;&amp;other)=delete']]],
-  ['pool_5fallocator_2eh_26',['pool_allocator.h',['../pool__allocator_8h.html',1,'']]],
-  ['print_27',['print',['../classIPAdressPool.html#a2b6fc8932df522d1c17d6d43fc99ef8e',1,'IPAdressPool']]],
-  ['print_5fip_28',['print_ip',['../print__ip_8cpp.html#a667e8e5af6201b75410c458b5dd66878',1,'print_ip.cpp']]],
-  ['print_5fip_2ecpp_29',['print_ip.cpp',['../print__ip_8cpp.html',1,'']]],
-  ['print_5ftuple_5fip_30',['print_tuple_ip',['../print__ip_8cpp.html#a21280506bd606c24fb7f563b32a338d8',1,'print_ip.cpp']]],
-  ['push_5ffront_31',['push_front',['../classsimple__forward__list.html#a41e7c785ab6dbdd584a121a54a03a9ca',1,'simple_forward_list']]]
+  ['main_45',['main',['../main_8cpp.html#a2c3f6775325c30275d11c6abee2db6a0',1,'main(int, char **):&#160;main.cpp'],['../ip__filter_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4',1,'main():&#160;ip_filter.cpp'],['../run__allocator_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4',1,'main():&#160;run_allocator.cpp'],['../print__ip_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4',1,'main():&#160;print_ip.cpp'],['../editor_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4',1,'main():&#160;editor.cpp']]],
+  ['main_2ecpp_46',['main.cpp',['../main_8cpp.html',1,'']]],
+  ['make_5fnew_5fdocument_47',['make_new_document',['../classmodel_1_1Core.html#abe6b0afdcf13d24d9da8eb24821fd987',1,'model::Core']]],
+  ['model_48',['model',['../namespacemodel.html',1,'']]],
+  ['model_2ecpp_49',['model.cpp',['../model_8cpp.html',1,'']]],
+  ['model_2eh_50',['model.h',['../model_8h.html',1,'']]]
 ];

@@ -1,6 +1,5 @@
 var searchData=
 [
-  ['simple_5fforward_5flist_80',['simple_forward_list',['../classsimple__forward__list.html#a468b8979c687a93855202ccca64ae0e4',1,'simple_forward_list::simple_forward_list()'],['../classsimple__forward__list.html#a2880b305bf93eba303074402744731d8',1,'simple_forward_list::simple_forward_list(const simple_forward_list &amp;other)=delete'],['../classsimple__forward__list.html#a26663446296c8a7371990ebf285ed40d',1,'simple_forward_list::simple_forward_list(simple_forward_list &amp;&amp;other)=delete']]],
-  ['size_81',['size',['../classsimple__forward__list.html#a63e1481a8003b3a9ce7e78d7ab5a5057',1,'simple_forward_list']]],
-  ['sort_5freverse_82',['sort_reverse',['../classIPAdressPool.html#a34862feb367e76ce053dd90c93a632c0',1,'IPAdressPool']]]
+  ['new_5fdocument_148',['new_document',['../classview_1_1GUI.html#aab7c443516c5e98eb6acb954e831ed53',1,'view::GUI']]],
+  ['next_5faction_149',['next_action',['../classview_1_1GUI.html#af414d613300be06eee8c8bdd3d0c479a',1,'view::GUI']]]
 ];

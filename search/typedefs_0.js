@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['ipadress_87',['IPAdress',['../ip__adress__pool_8h.html#a3a400f38a45c419d670ae74cfac535bf',1,'ip_adress_pool.h']]]
+  ['datatype_173',['DataType',['../classview_1_1Action.html#a7745727b6fe1b2b1e441aba29582c312',1,'view::Action']]]
 ];

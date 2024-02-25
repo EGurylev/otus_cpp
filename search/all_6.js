@@ -1,5 +1,5 @@
 var searchData=
 [
-  ['lib_2ecpp_18',['lib.cpp',['../lib_8cpp.html',1,'']]],
-  ['lib_2eh_19',['lib.h',['../lib_8h.html',1,'']]]
+  ['get_5fprimitives_28',['get_primitives',['../classmodel_1_1Core.html#ac0e5dda30848f8fdf0630597d01c4513',1,'model::Core']]],
+  ['gui_29',['GUI',['../classview_1_1GUI.html',1,'view']]]
 ];

@@ -1,7 +1,7 @@
 var searchData=
 [
-  ['read_32',['read',['../classIPAdressPool.html#aeb74f1df9308238f0b44a9f326897db9',1,'IPAdressPool']]],
-  ['readme_2emd_33',['README.md',['../README_8md.html',1,'']]],
-  ['rebind_34',['rebind',['../structpool__allocator_1_1rebind.html',1,'pool_allocator']]],
-  ['run_5fallocator_2ecpp_35',['run_allocator.cpp',['../run__allocator_8cpp.html',1,'']]]
+  ['name_51',['name',['../classview_1_1Action.html#a6491daae6a05ca3cf6a78a686ebe15e2',1,'view::Action']]],
+  ['new_5fdocument_52',['new_document',['../classview_1_1GUI.html#aab7c443516c5e98eb6acb954e831ed53',1,'view::GUI']]],
+  ['newdocument_53',['NewDocument',['../namespaceview.html#a3ed9452a7e31332dde346f7183ef9f4ca809e6c28dbce7880776468f49dd8cc41',1,'view']]],
+  ['next_5faction_54',['next_action',['../classview_1_1GUI.html#af414d613300be06eee8c8bdd3d0c479a',1,'view::GUI']]]
 ];

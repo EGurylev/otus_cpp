@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['value_86',['value',['../structall__same__type__tuple.html#aad869e7165af7879314bba6caa974329',1,'all_same_type_tuple']]]
+  ['data_167',['data',['../classview_1_1Action.html#a981de003df2db8a478e50704814b758c',1,'view::Action']]]
 ];
