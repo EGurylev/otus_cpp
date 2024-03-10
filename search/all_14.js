@@ -1,4 +1,5 @@
 var searchData=
 [
-  ['Репозиторий_20для_20домашних_20работ_20по_20курсу_20c_2b_2b_20developer_2e_20professional_88',['Репозиторий для домашних работ по курсу C++ Developer. Professional',['../md_README.html',1,'']]]
+  ['_7epool_5fallocator_101',['~pool_allocator',['../classpool__allocator.html#a85d6a46d9fa5aee967b175cf3bfb05d4',1,'pool_allocator']]],
+  ['_7eprimitive_102',['~Primitive',['../classview_1_1Primitive.html#a01d0970d57a21b18fd2deaa1616d2f96',1,'view::Primitive']]]
 ];

@@ -1,4 +1,5 @@
 var searchData=
 [
-  ['operator_3c_3c_148',['operator&lt;&lt;',['../ip__adress__pool_8cpp.html#ade5c2eabbb47b9b36f289a0139bf664b',1,'operator&lt;&lt;(std::ostream &amp;os, const IPAdress &amp;arr):&#160;ip_adress_pool.cpp'],['../ip__adress__pool_8cpp.html#ac66fe011dac444f661a89b20a46f363e',1,'operator&lt;&lt;(std::ostream &amp;os, const std::vector&lt; IPAdress &gt; &amp;pool):&#160;ip_adress_pool.cpp'],['../ip__adress__pool_8h.html#ade5c2eabbb47b9b36f289a0139bf664b',1,'operator&lt;&lt;(std::ostream &amp;os, const IPAdress &amp;arr):&#160;ip_adress_pool.cpp'],['../ip__adress__pool_8h.html#ac66fe011dac444f661a89b20a46f363e',1,'operator&lt;&lt;(std::ostream &amp;os, const std::vector&lt; IPAdress &gt; &amp;pool):&#160;ip_adress_pool.cpp']]]
+  ['new_5fdocument_174',['new_document',['../classview_1_1GUI.html#aab7c443516c5e98eb6acb954e831ed53',1,'view::GUI']]],
+  ['next_5faction_175',['next_action',['../classview_1_1GUI.html#af414d613300be06eee8c8bdd3d0c479a',1,'view::GUI']]]
 ];

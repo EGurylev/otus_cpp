@@ -1,6 +1,8 @@
 var searchData=
 [
-  ['simple_5fforward_5flist_157',['simple_forward_list',['../classsimple__forward__list.html#a468b8979c687a93855202ccca64ae0e4',1,'simple_forward_list::simple_forward_list()'],['../classsimple__forward__list.html#a2880b305bf93eba303074402744731d8',1,'simple_forward_list::simple_forward_list(const simple_forward_list &amp;other)=delete'],['../classsimple__forward__list.html#a26663446296c8a7371990ebf285ed40d',1,'simple_forward_list::simple_forward_list(simple_forward_list &amp;&amp;other)=delete']]],
-  ['size_158',['size',['../classsimple__forward__list.html#a63e1481a8003b3a9ce7e78d7ab5a5057',1,'simple_forward_list']]],
-  ['sort_5freverse_159',['sort_reverse',['../classIPAdressPool.html#a34862feb367e76ce053dd90c93a632c0',1,'IPAdressPool']]]
+  ['read_184',['read',['../classIPAdressPool.html#aeb74f1df9308238f0b44a9f326897db9',1,'IPAdressPool']]],
+  ['remove_5fprimitive_185',['remove_primitive',['../classmodel_1_1Core.html#a0f2f64b6f52e4aec0902ae334f40636e',1,'model::Core::remove_primitive()'],['../classview_1_1GUI.html#a618b39d7ae90ee9e7c582fe83a8bf19f',1,'view::GUI::remove_primitive()']]],
+  ['row_186',['Row',['../classMatrixImpl_1_1Row.html#aa2873b4b681a901dca466b01c49964a4',1,'MatrixImpl::Row::Row()=default'],['../classMatrixImpl_1_1Row.html#a9459a117ff233c2d8304f5cf243c1198',1,'MatrixImpl::Row::Row(size_t row, std::shared_ptr&lt; MatrixImpl &gt; matrix)']]],
+  ['rows_5fbegin_187',['rows_begin',['../classMatrixImpl.html#a2e552af96e18bce0fd7c67f9b766018c',1,'MatrixImpl']]],
+  ['rows_5fend_188',['rows_end',['../classMatrixImpl.html#ad86d364290b31810ff9b87e36e2e891c',1,'MatrixImpl']]]
 ];

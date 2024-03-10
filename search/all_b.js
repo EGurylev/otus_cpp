@@ -1,5 +1,7 @@
 var searchData=
 [
-  ['operator_3c_3c_54',['operator&lt;&lt;',['../ip__adress__pool_8cpp.html#ade5c2eabbb47b9b36f289a0139bf664b',1,'operator&lt;&lt;(std::ostream &amp;os, const IPAdress &amp;arr):&#160;ip_adress_pool.cpp'],['../ip__adress__pool_8cpp.html#ac66fe011dac444f661a89b20a46f363e',1,'operator&lt;&lt;(std::ostream &amp;os, const std::vector&lt; IPAdress &gt; &amp;pool):&#160;ip_adress_pool.cpp'],['../ip__adress__pool_8h.html#ade5c2eabbb47b9b36f289a0139bf664b',1,'operator&lt;&lt;(std::ostream &amp;os, const IPAdress &amp;arr):&#160;ip_adress_pool.cpp'],['../ip__adress__pool_8h.html#ac66fe011dac444f661a89b20a46f363e',1,'operator&lt;&lt;(std::ostream &amp;os, const std::vector&lt; IPAdress &gt; &amp;pool):&#160;ip_adress_pool.cpp']]],
-  ['other_55',['other',['../structpool__allocator_1_1rebind.html#aa07c30b4771af2fd045e2b5e6a93bcc4',1,'pool_allocator::rebind']]]
+  ['name_60',['name',['../classview_1_1Action.html#a6491daae6a05ca3cf6a78a686ebe15e2',1,'view::Action']]],
+  ['new_5fdocument_61',['new_document',['../classview_1_1GUI.html#aab7c443516c5e98eb6acb954e831ed53',1,'view::GUI']]],
+  ['newdocument_62',['NewDocument',['../namespaceview.html#a3ed9452a7e31332dde346f7183ef9f4ca809e6c28dbce7880776468f49dd8cc41',1,'view']]],
+  ['next_5faction_63',['next_action',['../classview_1_1GUI.html#af414d613300be06eee8c8bdd3d0c479a',1,'view::GUI']]]
 ];

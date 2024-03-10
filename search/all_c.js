@@ -1,14 +1,6 @@
 var searchData=
 [
-  ['pointer_56',['pointer',['../classpool__allocator.html#a11890e686319df999ab74dbbd62d8550',1,'pool_allocator']]],
-  ['pool_5fallocator_57',['pool_allocator',['../classpool__allocator.html',1,'pool_allocator&lt; T, N &gt;'],['../classpool__allocator.html#a7c81b16fe680884cbf542eee3b4d8bb7',1,'pool_allocator::pool_allocator()'],['../classpool__allocator.html#a04d9f9812384fe4dcbb7ce3616dc499b',1,'pool_allocator::pool_allocator(const pool_allocator &amp;other)=delete'],['../classpool__allocator.html#ab2aee5585238652a674e0323bd96c3e3',1,'pool_allocator::pool_allocator(const pool_allocator &amp;&amp;other)=delete']]],
-  ['pool_5fallocator_2eh_58',['pool_allocator.h',['../pool__allocator_8h.html',1,'']]],
-  ['position_59',['Position',['../structview_1_1Position.html',1,'view']]],
-  ['primitive_60',['Primitive',['../classmodel_1_1Primitive.html',1,'model::Primitive'],['../classview_1_1Primitive.html#a11962bf626725834bab76d91cdc5fb1e',1,'view::Primitive::Primitive()'],['../classview_1_1Primitive.html',1,'view::Primitive']]],
-  ['primitiveconvertor_61',['PrimitiveConvertor',['../classcontroller_1_1PrimitiveConvertor.html',1,'controller']]],
-  ['print_62',['print',['../classIPAdressPool.html#a2b6fc8932df522d1c17d6d43fc99ef8e',1,'IPAdressPool']]],
-  ['print_5fip_63',['print_ip',['../print__ip_8cpp.html#a667e8e5af6201b75410c458b5dd66878',1,'print_ip.cpp']]],
-  ['print_5fip_2ecpp_64',['print_ip.cpp',['../print__ip_8cpp.html',1,'']]],
-  ['print_5ftuple_5fip_65',['print_tuple_ip',['../print__ip_8cpp.html#a21280506bd606c24fb7f563b32a338d8',1,'print_ip.cpp']]],
-  ['push_5ffront_66',['push_front',['../classsimple__forward__list.html#a41e7c785ab6dbdd584a121a54a03a9ca',1,'simple_forward_list']]]
+  ['operator_3c_3c_64',['operator&lt;&lt;',['../ip__adress__pool_8cpp.html#ade5c2eabbb47b9b36f289a0139bf664b',1,'operator&lt;&lt;(std::ostream &amp;os, const IPAdress &amp;arr):&#160;ip_adress_pool.cpp'],['../ip__adress__pool_8cpp.html#ac66fe011dac444f661a89b20a46f363e',1,'operator&lt;&lt;(std::ostream &amp;os, const std::vector&lt; IPAdress &gt; &amp;pool):&#160;ip_adress_pool.cpp'],['../ip__adress__pool_8h.html#ade5c2eabbb47b9b36f289a0139bf664b',1,'operator&lt;&lt;(std::ostream &amp;os, const IPAdress &amp;arr):&#160;ip_adress_pool.cpp'],['../ip__adress__pool_8h.html#ac66fe011dac444f661a89b20a46f363e',1,'operator&lt;&lt;(std::ostream &amp;os, const std::vector&lt; IPAdress &gt; &amp;pool):&#160;ip_adress_pool.cpp']]],
+  ['operator_5b_5d_65',['operator[]',['../classMatrixImpl_1_1Row.html#a382ab6ac90a1090bd761dcd6cb5313bc',1,'MatrixImpl::Row::operator[]()'],['../classMatrix.html#a44280f9c7c20d29eac4d22d6edcf15a4',1,'Matrix::operator[]()']]],
+  ['other_66',['other',['../structpool__allocator_1_1rebind.html#aa07c30b4771af2fd045e2b5e6a93bcc4',1,'pool_allocator::rebind']]]
 ];
