@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['version_196',['version',['../lib_8cpp.html#ae64f17a84dc9c7144d1036498ff26fd9',1,'version():&#160;lib.cpp'],['../lib_8h.html#ae64f17a84dc9c7144d1036498ff26fd9',1,'version():&#160;lib.cpp']]]
+  ['update_243',['update',['../classview_1_1GUI.html#a3b5f8c05f6f5b7c24060ed1f81a56884',1,'view::GUI']]]
 ];
