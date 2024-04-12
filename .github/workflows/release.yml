@@ -15,10 +15,11 @@ jobs:
       - uses: actions/checkout@v3
         with:
           submodules: true
-      - run: sudo apt-get update && sudo apt-get install cmake -y
+      - run: sudo apt-get update && sudo apt-get install cmake libboost-all-dev -y
       - run: cmake . -DPATCH_VERSION=${{ github.run_number }} -DINSTALL_GTEST=NO
       - run: cmake --build .
-      - run: cmake --build . --target test
+      # - run: cmake --build . --target test
+      - run: ctest --verbose
       - run: cmake --build . --target package
       - name: Create Release
         id: create_release
