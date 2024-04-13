@@ -1,10 +1,17 @@
 #pragma once
 #include "command_block.h"
-#include <fstream>
-#include <iostream>
+#include "loggers.h"
+#include <memory>
 #include <stack>
 
-class CommandProcessor {
+class IObservable {
+  public:
+    virtual ~IObservable() = default;
+
+    virtual void subscribe(std::shared_ptr<IObserver> observer) = 0;
+};
+
+class CommandProcessor : public IObservable {
   public:
     struct BlockEdge {
         BlockEdge(char value) : value{value} {}
@@ -12,10 +19,12 @@ class CommandProcessor {
         operator char() const { return value; }
     };
 
-    CommandProcessor(size_t block_size, std::istream &is, std::ostream &os,
-                     BlockEdge open = '{', BlockEdge close = '}');
+    CommandProcessor(size_t block_size, std::istream &is, BlockEdge open = '{',
+                     BlockEdge close = '}');
 
     void process();
+
+    void subscribe(std::shared_ptr<IObserver> observer) override;
 
   private:
     bool is_opening(const std::string &command) const;
@@ -26,17 +35,13 @@ class CommandProcessor {
 
     void process_closing();
 
-    void log_to(std::ofstream &&ofs) { ofs << cmd_buff_; }
-
-    void log_to(std::ostream &os) { os << cmd_buff_; }
-
-    void release_commands();
+    void update();
 
     size_t block_size_{};
     std::istream &is_;
-    std::ostream &os_;
     std::stack<BlockEdge> edges_stack_;
     CommandBlock cmd_buff_;
     BlockEdge open_{'{'};
     BlockEdge close_{'}'};
+    std::vector<std::shared_ptr<IObserver>> subsribers_;
 };

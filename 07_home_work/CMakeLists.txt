@@ -1,6 +1,6 @@
 add_executable(bulk bulk.cpp)
 
-add_library(bulk_lib command_processor.cpp)
+add_library(bulk_lib command_block.cpp command_processor.cpp loggers.cpp)
 
 target_link_libraries(bulk PRIVATE bulk_lib)
 

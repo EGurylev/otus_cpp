@@ -5,7 +5,9 @@
 TEST(BulkTest, StaticBlock) {
     std::istringstream iss("cmd1\ncmd2\ncmd3\ncmd4\ncmd5");
     std::ostringstream oss;
-    CommandProcessor cmd_proc(3, iss, oss);
+    CommandProcessor cmd_proc(3, iss);
+    auto console_logger{std::make_shared<ConsoleLogger>(oss)};
+    cmd_proc.subscribe(console_logger);
     cmd_proc.process();
     std::string result{oss.str()};
     EXPECT_EQ(result,
@@ -17,7 +19,9 @@ TEST(BulkTest, MixedBlocks) {
         std::string("cmd1\ncmd2\n{\ncmd3\ncmd4\n}\n{\n") +
         "cmd5\ncmd6\n{\ncmd7\ncmd8\n}\ncmd9\n}\n{\ncmd10\ncmd11");
     std::ostringstream oss;
-    CommandProcessor cmd_proc(3, iss, oss);
+    CommandProcessor cmd_proc(3, iss);
+    auto console_logger{std::make_shared<ConsoleLogger>(oss)};
+    cmd_proc.subscribe(console_logger);
     cmd_proc.process();
     std::string result{oss.str()};
     EXPECT_EQ(result,
@@ -28,7 +32,9 @@ TEST(BulkTest, MixedBlocks) {
 TEST(BulkTest, NonDefaultBlockEdges) {
     std::istringstream iss("cmd1\n[\ncmd2\ncmd3\n]\n");
     std::ostringstream oss;
-    CommandProcessor cmd_proc(5, iss, oss, '[', ']');
+    CommandProcessor cmd_proc(5, iss, '[', ']');
+    auto console_logger{std::make_shared<ConsoleLogger>(oss)};
+    cmd_proc.subscribe(console_logger);
     cmd_proc.process();
     std::string result{oss.str()};
     EXPECT_EQ(result, "bulk: cmd1\nbulk: cmd2, cmd3\n");
