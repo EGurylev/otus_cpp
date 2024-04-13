@@ -74,11 +74,21 @@ $(function() {
 
 <p><code>#include &lt;<a class="el" href="command__processor_8h_source.html">command_processor.h</a>&gt;</code></p>
 <div class="dynheader">
+Inheritance diagram for CommandProcessor:</div>
+<div class="dyncontent">
+<div class="center"><img src="classCommandProcessor__inherit__graph.png" border="0" usemap="#aCommandProcessor_inherit__map" alt="Inheritance graph"/></div>
+<map name="aCommandProcessor_inherit__map" id="aCommandProcessor_inherit__map">
+<area shape="rect" title=" " alt="" coords="5,145,183,252"/>
+<area shape="rect" href="classIObservable.html" title=" " alt="" coords="26,5,162,97"/>
+</map>
+</div>
+<div class="dynheader">
 Collaboration diagram for CommandProcessor:</div>
 <div class="dyncontent">
 <div class="center"><img src="classCommandProcessor__coll__graph.png" border="0" usemap="#aCommandProcessor_coll__map" alt="Collaboration graph"/></div>
 <map name="aCommandProcessor_coll__map" id="aCommandProcessor_coll__map">
-<area shape="rect" title=" " alt="" coords="5,5,183,97"/>
+<area shape="rect" title=" " alt="" coords="5,145,183,252"/>
+<area shape="rect" href="classIObservable.html" title=" " alt="" coords="26,5,162,97"/>
 </map>
 </div>
 <table class="memberdecls">
@@ -89,14 +99,19 @@ Classes</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a2ea8362745188d74a0d2fe0043d449e9"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCommandProcessor.html#a2ea8362745188d74a0d2fe0043d449e9">CommandProcessor</a> (size_t block_size, std::istream &amp;is, std::ostream &amp;os, <a class="el" href="structCommandProcessor_1_1BlockEdge.html">BlockEdge</a> open='{', <a class="el" href="structCommandProcessor_1_1BlockEdge.html">BlockEdge</a> close='}')</td></tr>
-<tr class="separator:a2ea8362745188d74a0d2fe0043d449e9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa081523352fef5280883994ff15e89d2"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCommandProcessor.html#aa081523352fef5280883994ff15e89d2">CommandProcessor</a> (size_t block_size, std::istream &amp;is, <a class="el" href="structCommandProcessor_1_1BlockEdge.html">BlockEdge</a> open='{', <a class="el" href="structCommandProcessor_1_1BlockEdge.html">BlockEdge</a> close='}')</td></tr>
+<tr class="separator:aa081523352fef5280883994ff15e89d2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af2b2acd64ae9e39fb0aa5bfbdd428209"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCommandProcessor.html#af2b2acd64ae9e39fb0aa5bfbdd428209">process</a> ()</td></tr>
 <tr class="separator:af2b2acd64ae9e39fb0aa5bfbdd428209"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad192029903dc7a21083fdbedf0f6a25b"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCommandProcessor.html#ad192029903dc7a21083fdbedf0f6a25b">subscribe</a> (std::shared_ptr&lt; <a class="el" href="classIObserver.html">IObserver</a> &gt; observer) override</td></tr>
+<tr class="separator:ad192029903dc7a21083fdbedf0f6a25b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header pub_methods_classIObservable"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_classIObservable')"><img src="closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="classIObservable.html">IObservable</a></td></tr>
+<tr class="memitem:a2d6531781c6663816a2f1a2557ef5260 inherit pub_methods_classIObservable"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classIObservable.html#a2d6531781c6663816a2f1a2557ef5260">~IObservable</a> ()=default</td></tr>
+<tr class="separator:a2d6531781c6663816a2f1a2557ef5260 inherit pub_methods_classIObservable"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
-<a id="a2ea8362745188d74a0d2fe0043d449e9"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a2ea8362745188d74a0d2fe0043d449e9">&#9670;&nbsp;</a></span>CommandProcessor()</h2>
+<a id="aa081523352fef5280883994ff15e89d2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa081523352fef5280883994ff15e89d2">&#9670;&nbsp;</a></span>CommandProcessor()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -112,12 +127,6 @@ Public Member Functions</h2></td></tr>
           <td></td>
           <td class="paramtype">std::istream &amp;&#160;</td>
           <td class="paramname"><em>is</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">std::ostream &amp;&#160;</td>
-          <td class="paramname"><em>os</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -156,6 +165,34 @@ Public Member Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+
+</div>
+</div>
+<a id="ad192029903dc7a21083fdbedf0f6a25b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad192029903dc7a21083fdbedf0f6a25b">&#9670;&nbsp;</a></span>subscribe()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void CommandProcessor::subscribe </td>
+          <td>(</td>
+          <td class="paramtype">std::shared_ptr&lt; <a class="el" href="classIObserver.html">IObserver</a> &gt;&#160;</td>
+          <td class="paramname"><em>observer</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">override</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Implements <a class="el" href="classIObservable.html#a2cbe1e6d55594e74e8a9856c76b32edf">IObservable</a>.</p>
 
 </div>
 </div>
