@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['newdocument_287',['NewDocument',['../namespaceview.html#a3ed9452a7e31332dde346f7183ef9f4ca809e6c28dbce7880776468f49dd8cc41',1,'view']]]
+  ['importdocument_329',['ImportDocument',['../namespaceview.html#a3ed9452a7e31332dde346f7183ef9f4ca01cb56582d1f90ef299b2a420913d28f',1,'view']]]
 ];

@@ -1,5 +1,4 @@
 var searchData=
 [
-  ['matrix_159',['Matrix',['../classMatrix.html',1,'']]],
-  ['matriximpl_160',['MatrixImpl',['../classMatrixImpl.html',1,'']]]
+  ['logic_183',['Logic',['../classcontroller_1_1Logic.html',1,'controller']]]
 ];

@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['exportdocument_285',['ExportDocument',['../namespaceview.html#a3ed9452a7e31332dde346f7183ef9f4cac3f1edf887b14e7ed5fd09f9b4caaa62',1,'view']]]
+  ['crc32_327',['crc32',['../file__handler_8h.html#a06b5e1d0b960a8ac8adb8a4150ad6b50a058063301b99cb43d6165291cb9f086a',1,'file_handler.h']]]
 ];
