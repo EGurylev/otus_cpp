@@ -88,86 +88,90 @@ $(function() {
 <div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;            <span class="keywordflow">return</span> group_;</div>
 <div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;        }</div>
 <div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160; </div>
-<div class="line"><a name="l00018"></a><span class="lineno"><a class="line" href="classFileGroupManager_1_1FileGroup.html#a539711ed197e42ef949a4dbc1e1c99b8">   18</a></span>&#160;        <span class="keywordtype">bool</span> <a class="code" href="classFileGroupManager_1_1FileGroup.html#a539711ed197e42ef949a4dbc1e1c99b8">is_finished</a>()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> group_.begin()-&gt;second.is_finished(); }</div>
-<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160; </div>
-<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;      <span class="keyword">private</span>:</div>
-<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;        std::unordered_map&lt;fs::path, FileHandler, HashPath&gt; group_;</div>
-<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;    };</div>
-<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160; </div>
-<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;    <a class="code" href="classFileGroupManager.html#a315caf1213df1f354ef5bb2b9699d46a">FileGroupManager</a>(std::vector&lt;fs::path&gt; &amp;&amp;include,</div>
-<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;                     std::vector&lt;fs::path&gt; &amp;&amp;exclude, <span class="keywordtype">bool</span> recursive,</div>
-<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;                     <span class="keyword">const</span> std::string &amp;checksum, uint32_t block_size,</div>
-<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;                     <span class="keyword">const</span> std::string &amp;filter, <span class="keywordtype">size_t</span> min_size,</div>
-<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;                     std::ostream &amp;os);</div>
-<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160; </div>
-<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;    <span class="keywordtype">bool</span> <a class="code" href="classFileGroupManager.html#aabb12e28ff70fe869bddacf7f0c913c5">all_finished</a>() <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00018"></a><span class="lineno"><a class="line" href="classFileGroupManager_1_1FileGroup.html#a539711ed197e42ef949a4dbc1e1c99b8">   18</a></span>&#160;        <span class="keywordtype">bool</span> <a class="code" href="classFileGroupManager_1_1FileGroup.html#a539711ed197e42ef949a4dbc1e1c99b8">is_finished</a>()<span class="keyword"> const </span>{</div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;            <span class="keywordflow">return</span> group_.begin()-&gt;second.is_finished();</div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;        }</div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160; </div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;      <span class="keyword">private</span>:</div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;        std::unordered_map&lt;fs::path, FileHandler, HashPath&gt; group_;</div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;    };</div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160; </div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;    <a class="code" href="classFileGroupManager.html#a315caf1213df1f354ef5bb2b9699d46a">FileGroupManager</a>(std::vector&lt;fs::path&gt; &amp;&amp;include,</div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;                     std::vector&lt;fs::path&gt; &amp;&amp;exclude, <span class="keywordtype">bool</span> recursive,</div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;                     <span class="keyword">const</span> std::string &amp;checksum, uint32_t block_size,</div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;                     <span class="keyword">const</span> std::string &amp;filter, <span class="keywordtype">size_t</span> min_size,</div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;                     std::ostream &amp;os);</div>
 <div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160; </div>
-<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="classFileGroupManager.html#ab1671c8e52256b310f5310bbf2ec90da">make_step</a>();</div>
-<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="classFileGroupManager.html#a71629a7aaffdc6719738f49961b4b491">find_duplicates</a>();</div>
-<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160; </div>
-<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;  <span class="keyword">private</span>:</div>
-<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;    <span class="keywordtype">void</span> find_groups();</div>
-<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;    <span class="keywordtype">size_t</span> count_files();</div>
-<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;    <span class="keywordtype">size_t</span> get_file_limit();</div>
-<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160; </div>
-<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;    <span class="keyword">template</span> &lt;<span class="keyword">typename</span> DirectoryIterator&gt; <span class="keyword">auto</span> group_by_size() {</div>
-<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;        std::unordered_map&lt;size_t, std::vector&lt;fs::path&gt;&gt; size_groups;</div>
-<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;        <span class="keywordflow">for</span> (<span class="keyword">const</span> <span class="keyword">auto</span> &amp;directory : include_) {</div>
-<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;            boost::smatch what;</div>
-<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160; </div>
-<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;            DirectoryIterator it{directory}, end;</div>
-<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;            <span class="keywordflow">while</span> (it != end) {</div>
-<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;                <span class="keywordflow">if</span> constexpr (std::is_same_v&lt;</div>
-<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;                                  DirectoryIterator,</div>
-<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;                                  fs::recursive_directory_iterator&gt;) {</div>
-<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;                    <span class="keywordflow">if</span> (exclude_.find(it-&gt;path()) != exclude_.end()) {</div>
-<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;                        it.no_push();</div>
-<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;                    }</div>
-<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;                }</div>
-<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160; </div>
-<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;                <span class="keywordflow">if</span> (fs::is_regular_file(it-&gt;path()) &amp;&amp;</div>
-<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;                    fs::file_size(it-&gt;path()) &gt;= min_size_ &amp;&amp;</div>
-<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;                    (filter_.str().empty()</div>
-<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;                         ? <span class="keyword">true</span></div>
-<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;                         : boost::regex_match(it-&gt;path().filename().string(),</div>
-<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;                                              what, filter_))) {</div>
-<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;                    size_groups[fs::file_size(it-&gt;path())].push_back(</div>
-<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;                        it-&gt;path());</div>
-<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;                }</div>
-<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;                ++it;</div>
-<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;            }</div>
-<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160; </div>
-<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;            std::erase_if(size_groups, [](<span class="keyword">const</span> <span class="keyword">auto</span> &amp;item) {</div>
-<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;                <span class="keywordflow">return</span> item.second.size() == 1;</div>
-<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;            });</div>
-<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;        }</div>
-<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;        <span class="keywordflow">return</span> size_groups;</div>
-<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;    }</div>
-<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160; </div>
-<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;    std::vector&lt;fs::path&gt; include_;</div>
-<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;    std::unordered_set&lt;fs::path, HashPath&gt; exclude_;</div>
-<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;    <span class="keywordtype">bool</span> recursive_{};</div>
-<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;    uint32_t block_size_;</div>
-<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;    boost::regex filter_;</div>
-<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;    <span class="keywordtype">size_t</span> min_size_;</div>
-<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;    std::ostream &amp;os_;</div>
-<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160; </div>
-<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;    std::unordered_map&lt;size_t, FileGroup&gt; file_groups_;</div>
-<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;    <span class="keyword">static</span> <span class="keywordtype">size_t</span> group_id_;</div>
-<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;};</div>
-<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160; </div>
-<div class="line"><a name="l00086"></a><span class="lineno"><a class="line" href="file__group_8h.html#a634919d837dfcf065225f65effe87736">   86</a></span>&#160;std::ostream &amp;<a class="code" href="file__group_8h.html#a634919d837dfcf065225f65effe87736">operator&lt;&lt;</a>(</div>
-<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;    std::ostream &amp;os,</div>
-<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;    <span class="keyword">const</span> std::unordered_map&lt;size_t, FileGroupManager::FileGroup&gt; &amp;groups);</div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;    <span class="keywordtype">bool</span> <a class="code" href="classFileGroupManager.html#aabb12e28ff70fe869bddacf7f0c913c5">all_finished</a>() <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160; </div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="classFileGroupManager.html#ab1671c8e52256b310f5310bbf2ec90da">make_step</a>();</div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="classFileGroupManager.html#a71629a7aaffdc6719738f49961b4b491">find_duplicates</a>();</div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="classFileGroupManager.html#a32242792b778a582a28f3ca7019850ab">print_duplicates</a>();</div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160; </div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;  <span class="keyword">private</span>:</div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;    <span class="keywordtype">void</span> find_groups();</div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;    <span class="keywordtype">size_t</span> count_files();</div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;    <span class="keywordtype">size_t</span> get_file_limit();</div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160; </div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;    <span class="keyword">template</span> &lt;<span class="keyword">typename</span> DirectoryIterator&gt; <span class="keyword">auto</span> group_by_size() {</div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;        std::unordered_map&lt;size_t, std::vector&lt;fs::path&gt;&gt; size_groups;</div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;        <span class="keywordflow">for</span> (<span class="keyword">const</span> <span class="keyword">auto</span> &amp;directory : include_) {</div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;            boost::smatch what;</div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160; </div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;            DirectoryIterator it{directory}, end;</div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;            <span class="keywordflow">while</span> (it != end) {</div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;                <span class="keywordflow">if</span> constexpr (std::is_same_v&lt;</div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;                                  DirectoryIterator,</div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;                                  fs::recursive_directory_iterator&gt;) {</div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;                    <span class="keywordflow">if</span> (exclude_.find(it-&gt;path()) != exclude_.end()) {</div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;                        it.no_push();</div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;                    }</div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;                }</div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160; </div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;                <span class="keywordflow">if</span> (fs::is_regular_file(it-&gt;path()) &amp;&amp;</div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;                    fs::file_size(it-&gt;path()) &gt;= min_size_ &amp;&amp;</div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;                    (filter_.str().empty()</div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;                         ? <span class="keyword">true</span></div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;                         : boost::regex_match(it-&gt;path().filename().string(),</div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;                                              what, filter_))) {</div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;                    size_groups[fs::file_size(it-&gt;path())].push_back(</div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;                        it-&gt;path());</div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;                }</div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;                ++it;</div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;            }</div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160; </div>
+<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;            std::erase_if(size_groups, [](<span class="keyword">const</span> <span class="keyword">auto</span> &amp;item) {</div>
+<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;                <span class="keywordflow">return</span> item.second.size() == 1;</div>
+<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;            });</div>
+<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;        }</div>
+<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;        <span class="keywordflow">return</span> size_groups;</div>
+<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;    }</div>
+<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160; </div>
+<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;    std::vector&lt;fs::path&gt; include_;</div>
+<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;    std::unordered_set&lt;fs::path, HashPath&gt; exclude_;</div>
+<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;    <span class="keywordtype">bool</span> recursive_{};</div>
+<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;    uint32_t block_size_;</div>
+<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;    boost::regex filter_;</div>
+<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;    <span class="keywordtype">size_t</span> min_size_;</div>
+<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;    std::ostream &amp;os_;</div>
+<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160; </div>
+<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;    std::unordered_map&lt;size_t, FileGroup&gt; file_groups_;</div>
+<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;    <span class="keyword">static</span> <span class="keywordtype">size_t</span> group_id_;</div>
+<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;};</div>
+<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160; </div>
+<div class="line"><a name="l00089"></a><span class="lineno"><a class="line" href="file__group_8h.html#a634919d837dfcf065225f65effe87736">   89</a></span>&#160;std::ostream &amp;<a class="code" href="file__group_8h.html#a634919d837dfcf065225f65effe87736">operator&lt;&lt;</a>(</div>
+<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;    std::ostream &amp;os,</div>
+<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;    <span class="keyword">const</span> std::unordered_map&lt;size_t, FileGroupManager::FileGroup&gt; &amp;groups);</div>
 <div class="ttc" id="aclassFileGroupManager_1_1FileGroup_html"><div class="ttname"><a href="classFileGroupManager_1_1FileGroup.html">FileGroupManager::FileGroup</a></div><div class="ttdef"><b>Definition:</b> file_group.h:10</div></div>
 <div class="ttc" id="aclassFileGroupManager_1_1FileGroup_html_a539711ed197e42ef949a4dbc1e1c99b8"><div class="ttname"><a href="classFileGroupManager_1_1FileGroup.html#a539711ed197e42ef949a4dbc1e1c99b8">FileGroupManager::FileGroup::is_finished</a></div><div class="ttdeci">bool is_finished() const</div><div class="ttdef"><b>Definition:</b> file_group.h:18</div></div>
 <div class="ttc" id="aclassFileGroupManager_1_1FileGroup_html_a874ce03c710796c50170c06ad2678903"><div class="ttname"><a href="classFileGroupManager_1_1FileGroup.html#a874ce03c710796c50170c06ad2678903">FileGroupManager::FileGroup::get_files</a></div><div class="ttdeci">std::unordered_map&lt; fs::path, FileHandler, HashPath &gt; &amp; get_files()</div><div class="ttdef"><b>Definition:</b> file_group.h:14</div></div>
 <div class="ttc" id="aclassFileGroupManager_1_1FileGroup_html_aea9988c8f5e9b161efc79ba8d4a3e720"><div class="ttname"><a href="classFileGroupManager_1_1FileGroup.html#aea9988c8f5e9b161efc79ba8d4a3e720">FileGroupManager::FileGroup::operator[]</a></div><div class="ttdeci">FileHandler &amp; operator[](const fs::path &amp;path)</div><div class="ttdef"><b>Definition:</b> file_group.h:12</div></div>
 <div class="ttc" id="aclassFileGroupManager_html"><div class="ttname"><a href="classFileGroupManager.html">FileGroupManager</a></div><div class="ttdef"><b>Definition:</b> file_group.h:8</div></div>
 <div class="ttc" id="aclassFileGroupManager_html_a315caf1213df1f354ef5bb2b9699d46a"><div class="ttname"><a href="classFileGroupManager.html#a315caf1213df1f354ef5bb2b9699d46a">FileGroupManager::FileGroupManager</a></div><div class="ttdeci">FileGroupManager(std::vector&lt; fs::path &gt; &amp;&amp;include, std::vector&lt; fs::path &gt; &amp;&amp;exclude, bool recursive, const std::string &amp;checksum, uint32_t block_size, const std::string &amp;filter, size_t min_size, std::ostream &amp;os)</div><div class="ttdef"><b>Definition:</b> file_group.cpp:21</div></div>
+<div class="ttc" id="aclassFileGroupManager_html_a32242792b778a582a28f3ca7019850ab"><div class="ttname"><a href="classFileGroupManager.html#a32242792b778a582a28f3ca7019850ab">FileGroupManager::print_duplicates</a></div><div class="ttdeci">void print_duplicates()</div><div class="ttdef"><b>Definition:</b> file_group.cpp:88</div></div>
 <div class="ttc" id="aclassFileGroupManager_html_a71629a7aaffdc6719738f49961b4b491"><div class="ttname"><a href="classFileGroupManager.html#a71629a7aaffdc6719738f49961b4b491">FileGroupManager::find_duplicates</a></div><div class="ttdeci">void find_duplicates()</div><div class="ttdef"><b>Definition:</b> file_group.cpp:73</div></div>
 <div class="ttc" id="aclassFileGroupManager_html_aabb12e28ff70fe869bddacf7f0c913c5"><div class="ttname"><a href="classFileGroupManager.html#aabb12e28ff70fe869bddacf7f0c913c5">FileGroupManager::all_finished</a></div><div class="ttdeci">bool all_finished() const</div><div class="ttdef"><b>Definition:</b> file_group.cpp:54</div></div>
-<div class="ttc" id="aclassFileGroupManager_html_ab1671c8e52256b310f5310bbf2ec90da"><div class="ttname"><a href="classFileGroupManager.html#ab1671c8e52256b310f5310bbf2ec90da">FileGroupManager::make_step</a></div><div class="ttdeci">void make_step()</div><div class="ttdef"><b>Definition:</b> file_group.cpp:97</div></div>
+<div class="ttc" id="aclassFileGroupManager_html_ab1671c8e52256b310f5310bbf2ec90da"><div class="ttname"><a href="classFileGroupManager.html#ab1671c8e52256b310f5310bbf2ec90da">FileGroupManager::make_step</a></div><div class="ttdeci">void make_step()</div><div class="ttdef"><b>Definition:</b> file_group.cpp:98</div></div>
 <div class="ttc" id="aclassFileHandler_html"><div class="ttname"><a href="classFileHandler.html">FileHandler</a></div><div class="ttdef"><b>Definition:</b> file_handler.h:16</div></div>
 <div class="ttc" id="afile__group_8h_html_a634919d837dfcf065225f65effe87736"><div class="ttname"><a href="file__group_8h.html#a634919d837dfcf065225f65effe87736">operator&lt;&lt;</a></div><div class="ttdeci">std::ostream &amp; operator&lt;&lt;(std::ostream &amp;os, const std::unordered_map&lt; size_t, FileGroupManager::FileGroup &gt; &amp;groups)</div></div>
 <div class="ttc" id="afile__handler_8h_html"><div class="ttname"><a href="file__handler_8h.html">file_handler.h</a></div></div>
