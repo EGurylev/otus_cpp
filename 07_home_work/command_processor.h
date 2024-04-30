@@ -22,6 +22,8 @@ class CommandProcessor : public IObservable {
     CommandProcessor(size_t block_size, std::istream &is, BlockEdge open = '{',
                      BlockEdge close = '}');
 
+    ~CommandProcessor();
+
     void process();
 
     void subscribe(std::shared_ptr<IObserver> observer) override;
