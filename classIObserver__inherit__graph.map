@@ -1,6 +1,7 @@
 <map id="IObserver" name="IObserver">
-<area shape="rect" id="node1" title=" " alt="" coords="169,5,291,97"/>
-<area shape="rect" id="node2" href="$classConsoleLogger.html" title=" " alt="" coords="5,160,148,252"/>
-<area shape="rect" id="node3" href="$classFileLogger.html" title=" " alt="" coords="173,160,287,252"/>
-<area shape="rect" id="node4" href="$classasync_1_1AsyncConsoleLogger.html" title=" " alt="" coords="311,145,514,267"/>
+<area shape="rect" id="node1" title=" " alt="" coords="260,5,381,97"/>
+<area shape="rect" id="node2" href="$classConsoleLogger.html" title=" " alt="" coords="5,153,148,245"/>
+<area shape="rect" id="node3" href="$classFileLogger.html" title=" " alt="" coords="173,153,287,245"/>
+<area shape="rect" id="node4" href="$classasync_1_1AsyncConsoleLogger.html" title=" " alt="" coords="311,145,514,252"/>
+<area shape="rect" id="node5" href="$classasync_1_1AsyncDuoFileLogger.html" title=" " alt="" coords="538,145,738,252"/>
 </map>

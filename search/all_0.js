@@ -20,5 +20,6 @@ var searchData=
   ['async_5floggers_2ecpp_17',['async_loggers.cpp',['../async__loggers_8cpp.html',1,'']]],
   ['async_5floggers_2eh_18',['async_loggers.h',['../async__loggers_8h.html',1,'']]],
   ['asyncbulk_19',['AsyncBulk',['../classasync_1_1AsyncBulk.html',1,'async::AsyncBulk'],['../classasync_1_1AsyncBulk.html#ad2a262637ffb3e5a75b67895fbbd7210',1,'async::AsyncBulk::AsyncBulk()'],['../classasync_1_1AsyncBulk.html#af4ef255ef42547ea97219846a305f973',1,'async::AsyncBulk::AsyncBulk(const AsyncBulk &amp;)=delete']]],
-  ['asyncconsolelogger_20',['AsyncConsoleLogger',['../classasync_1_1AsyncConsoleLogger.html',1,'async::AsyncConsoleLogger'],['../classasync_1_1AsyncConsoleLogger.html#a16be0d3311e9d4fe25ae7ebc509d63b9',1,'async::AsyncConsoleLogger::AsyncConsoleLogger()']]]
+  ['asyncconsolelogger_20',['AsyncConsoleLogger',['../classasync_1_1AsyncConsoleLogger.html',1,'async::AsyncConsoleLogger'],['../classasync_1_1AsyncConsoleLogger.html#a16be0d3311e9d4fe25ae7ebc509d63b9',1,'async::AsyncConsoleLogger::AsyncConsoleLogger()']]],
+  ['asyncduofilelogger_21',['AsyncDuoFileLogger',['../classasync_1_1AsyncDuoFileLogger.html',1,'async::AsyncDuoFileLogger'],['../classasync_1_1AsyncDuoFileLogger.html#a0e7f9a4a6114cb1077374b146af8d9ba',1,'async::AsyncDuoFileLogger::AsyncDuoFileLogger()']]]
 ];

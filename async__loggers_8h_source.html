@@ -74,14 +74,14 @@ $(function() {
 <a href="async__loggers_8h.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="preprocessor">#pragma once</span></div>
 <div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="loggers_8h.html">loggers.h</a>&quot;</span></div>
 <div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="preprocessor">#include &lt;condition_variable&gt;</span></div>
-<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="preprocessor">#include &lt;thread&gt;</span></div>
-<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160; </div>
-<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="keyword">namespace </span><a class="code" href="namespaceasync.html">async</a> {</div>
-<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160; </div>
-<div class="line"><a name="l00008"></a><span class="lineno"><a class="line" href="classasync_1_1AsyncConsoleLogger.html">    8</a></span>&#160;<span class="keyword">class </span><a class="code" href="classasync_1_1AsyncConsoleLogger.html">AsyncConsoleLogger</a> : <span class="keyword">public</span> <a class="code" href="classIObserver.html">IObserver</a> {</div>
-<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;  <span class="keyword">public</span>:</div>
-<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;    <a class="code" href="classasync_1_1AsyncConsoleLogger.html#a16be0d3311e9d4fe25ae7ebc509d63b9">AsyncConsoleLogger</a>(std::ostream &amp;os);</div>
-<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;    <a class="code" href="classasync_1_1AsyncConsoleLogger.html#ad9e9149a11bef671260fb0f0fe5a744c">~AsyncConsoleLogger</a>();</div>
+<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="preprocessor">#include &lt;queue&gt;</span></div>
+<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="preprocessor">#include &lt;thread&gt;</span></div>
+<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160; </div>
+<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="keyword">namespace </span><a class="code" href="namespaceasync.html">async</a> {</div>
+<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160; </div>
+<div class="line"><a name="l00009"></a><span class="lineno"><a class="line" href="classasync_1_1AsyncConsoleLogger.html">    9</a></span>&#160;<span class="keyword">class </span><a class="code" href="classasync_1_1AsyncConsoleLogger.html">AsyncConsoleLogger</a> : <span class="keyword">public</span> <a class="code" href="classIObserver.html">IObserver</a> {</div>
+<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;  <span class="keyword">public</span>:</div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;    <a class="code" href="classasync_1_1AsyncConsoleLogger.html#a16be0d3311e9d4fe25ae7ebc509d63b9">AsyncConsoleLogger</a>(std::ostream &amp;os);</div>
 <div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="classasync_1_1AsyncConsoleLogger.html#aea472ff3bc8d8e511882dc6257122209">update</a>(<span class="keyword">const</span> <a class="code" href="classCommandBlock.html">CommandBlock</a> &amp;cmd_block) <span class="keyword">override</span>;</div>
 <div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="classasync_1_1AsyncConsoleLogger.html#a270b6c85563f05440624dc06fddaa098">stop</a>();</div>
 <div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160; </div>
@@ -89,21 +89,45 @@ $(function() {
 <div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;    <span class="keywordtype">void</span> process();</div>
 <div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160; </div>
 <div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;    std::ostream &amp;os_;</div>
-<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;    <a class="code" href="classCommandBlock.html">CommandBlock</a> cmd_block_;</div>
-<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;    std::mutex m_;</div>
-<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;    std::condition_variable cv_;</div>
-<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;    std::thread thread_;</div>
-<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;    <span class="keywordtype">bool</span> stop_{};</div>
-<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;};</div>
-<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160; </div>
-<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;} <span class="comment">// namespace async</span></div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;    std::queue&lt;CommandBlock&gt; command_blocks_;</div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;    <span class="keywordtype">bool</span> stop_{};</div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160; </div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;    std::mutex m_;</div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;    std::condition_variable cv_;</div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;    std::jthread thread_;</div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;};</div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160; </div>
+<div class="line"><a name="l00027"></a><span class="lineno"><a class="line" href="classasync_1_1AsyncDuoFileLogger.html">   27</a></span>&#160;<span class="keyword">class </span><a class="code" href="classasync_1_1AsyncDuoFileLogger.html">AsyncDuoFileLogger</a> : <span class="keyword">public</span> <a class="code" href="classIObserver.html">IObserver</a> {</div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;  <span class="keyword">public</span>:</div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;    <a class="code" href="classasync_1_1AsyncDuoFileLogger.html#a0e7f9a4a6114cb1077374b146af8d9ba">AsyncDuoFileLogger</a>(<span class="keyword">const</span> std::string &amp;name_prefix);</div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="classasync_1_1AsyncDuoFileLogger.html#ab8047f179bd397079149c2cee9220184">update</a>(<span class="keyword">const</span> <a class="code" href="classCommandBlock.html">CommandBlock</a> &amp;cmd_block) <span class="keyword">override</span>;</div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="classasync_1_1AsyncDuoFileLogger.html#a31af8f5fc99890f4cf05bb0065c35fad">stop</a>();</div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160; </div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;  <span class="keyword">private</span>:</div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;    <span class="keywordtype">void</span> write();</div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160; </div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;    std::string name_prefix_;</div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;    std::queue&lt;CommandBlock&gt; command_blocks_;</div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;    <span class="keywordtype">size_t</span> block_counter_{};</div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;    <span class="keywordtype">bool</span> stop_{};</div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160; </div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;    std::jthread first_thread_;</div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;    std::jthread second_thread_;</div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;    std::mutex m_;</div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;    std::condition_variable cv_;</div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;};</div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160; </div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;} <span class="comment">// namespace async</span></div>
 <div class="ttc" id="aclassCommandBlock_html"><div class="ttname"><a href="classCommandBlock.html">CommandBlock</a></div><div class="ttdef"><b>Definition:</b> command_block.h:6</div></div>
 <div class="ttc" id="aclassIObserver_html"><div class="ttname"><a href="classIObserver.html">IObserver</a></div><div class="ttdef"><b>Definition:</b> loggers.h:6</div></div>
-<div class="ttc" id="aclassasync_1_1AsyncConsoleLogger_html"><div class="ttname"><a href="classasync_1_1AsyncConsoleLogger.html">async::AsyncConsoleLogger</a></div><div class="ttdef"><b>Definition:</b> async_loggers.h:8</div></div>
+<div class="ttc" id="aclassasync_1_1AsyncConsoleLogger_html"><div class="ttname"><a href="classasync_1_1AsyncConsoleLogger.html">async::AsyncConsoleLogger</a></div><div class="ttdef"><b>Definition:</b> async_loggers.h:9</div></div>
 <div class="ttc" id="aclassasync_1_1AsyncConsoleLogger_html_a16be0d3311e9d4fe25ae7ebc509d63b9"><div class="ttname"><a href="classasync_1_1AsyncConsoleLogger.html#a16be0d3311e9d4fe25ae7ebc509d63b9">async::AsyncConsoleLogger::AsyncConsoleLogger</a></div><div class="ttdeci">AsyncConsoleLogger(std::ostream &amp;os)</div><div class="ttdef"><b>Definition:</b> async_loggers.cpp:5</div></div>
-<div class="ttc" id="aclassasync_1_1AsyncConsoleLogger_html_a270b6c85563f05440624dc06fddaa098"><div class="ttname"><a href="classasync_1_1AsyncConsoleLogger.html#a270b6c85563f05440624dc06fddaa098">async::AsyncConsoleLogger::stop</a></div><div class="ttdeci">void stop()</div><div class="ttdef"><b>Definition:</b> async_loggers.cpp:35</div></div>
-<div class="ttc" id="aclassasync_1_1AsyncConsoleLogger_html_ad9e9149a11bef671260fb0f0fe5a744c"><div class="ttname"><a href="classasync_1_1AsyncConsoleLogger.html#ad9e9149a11bef671260fb0f0fe5a744c">async::AsyncConsoleLogger::~AsyncConsoleLogger</a></div><div class="ttdeci">~AsyncConsoleLogger()</div><div class="ttdef"><b>Definition:</b> async_loggers.cpp:16</div></div>
+<div class="ttc" id="aclassasync_1_1AsyncConsoleLogger_html_a270b6c85563f05440624dc06fddaa098"><div class="ttname"><a href="classasync_1_1AsyncConsoleLogger.html#a270b6c85563f05440624dc06fddaa098">async::AsyncConsoleLogger::stop</a></div><div class="ttdeci">void stop()</div><div class="ttdef"><b>Definition:</b> async_loggers.cpp:28</div></div>
 <div class="ttc" id="aclassasync_1_1AsyncConsoleLogger_html_aea472ff3bc8d8e511882dc6257122209"><div class="ttname"><a href="classasync_1_1AsyncConsoleLogger.html#aea472ff3bc8d8e511882dc6257122209">async::AsyncConsoleLogger::update</a></div><div class="ttdeci">void update(const CommandBlock &amp;cmd_block) override</div><div class="ttdef"><b>Definition:</b> async_loggers.cpp:9</div></div>
+<div class="ttc" id="aclassasync_1_1AsyncDuoFileLogger_html"><div class="ttname"><a href="classasync_1_1AsyncDuoFileLogger.html">async::AsyncDuoFileLogger</a></div><div class="ttdef"><b>Definition:</b> async_loggers.h:27</div></div>
+<div class="ttc" id="aclassasync_1_1AsyncDuoFileLogger_html_a0e7f9a4a6114cb1077374b146af8d9ba"><div class="ttname"><a href="classasync_1_1AsyncDuoFileLogger.html#a0e7f9a4a6114cb1077374b146af8d9ba">async::AsyncDuoFileLogger::AsyncDuoFileLogger</a></div><div class="ttdeci">AsyncDuoFileLogger(const std::string &amp;name_prefix)</div><div class="ttdef"><b>Definition:</b> async_loggers.cpp:33</div></div>
+<div class="ttc" id="aclassasync_1_1AsyncDuoFileLogger_html_a31af8f5fc99890f4cf05bb0065c35fad"><div class="ttname"><a href="classasync_1_1AsyncDuoFileLogger.html#a31af8f5fc99890f4cf05bb0065c35fad">async::AsyncDuoFileLogger::stop</a></div><div class="ttdeci">void stop()</div><div class="ttdef"><b>Definition:</b> async_loggers.cpp:64</div></div>
+<div class="ttc" id="aclassasync_1_1AsyncDuoFileLogger_html_ab8047f179bd397079149c2cee9220184"><div class="ttname"><a href="classasync_1_1AsyncDuoFileLogger.html#ab8047f179bd397079149c2cee9220184">async::AsyncDuoFileLogger::update</a></div><div class="ttdeci">void update(const CommandBlock &amp;cmd_block) override</div><div class="ttdef"><b>Definition:</b> async_loggers.cpp:39</div></div>
 <div class="ttc" id="aloggers_8h_html"><div class="ttname"><a href="loggers_8h.html">loggers.h</a></div></div>
 <div class="ttc" id="anamespaceasync_html"><div class="ttname"><a href="namespaceasync.html">async</a></div><div class="ttdef"><b>Definition:</b> async.cpp:4</div></div>
 </div><!-- fragment --></div><!-- contents -->
