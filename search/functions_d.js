@@ -8,7 +8,7 @@ var searchData=
   ['print_5ftuple_5fip_333',['print_tuple_ip',['../print__ip_8cpp.html#a21280506bd606c24fb7f563b32a338d8',1,'print_ip.cpp']]],
   ['process_334',['process',['../classCommandProcessor.html#af2b2acd64ae9e39fb0aa5bfbdd428209',1,'CommandProcessor']]],
   ['process_5fconnection1_335',['process_connection1',['../09__home__work_2main_8cpp.html#add57b2c8cea2370310ce9fdc19cbe7bb',1,'main.cpp']]],
-  ['process_5fconnection23_336',['process_connection23',['../09__home__work_2main_8cpp.html#a3fdf5bb78d108fb7459d450d16b43861',1,'main.cpp']]],
+  ['process_5fconnections23_336',['process_connections23',['../09__home__work_2main_8cpp.html#a08bb3a010d69412af1c730be7c9a35a4',1,'main.cpp']]],
   ['push_337',['push',['../classCommandBlock.html#a2dadf65f3226afeb16b4de96d862bbc8',1,'CommandBlock']]],
   ['push_5ffront_338',['push_front',['../classsimple__forward__list.html#a41e7c785ab6dbdd584a121a54a03a9ca',1,'simple_forward_list']]]
 ];
