@@ -27,9 +27,7 @@ void CommandProcessor::process() {
     update();
 }
 
-CommandProcessor::~CommandProcessor() {
-    update();
-}
+CommandProcessor::~CommandProcessor() { update(); }
 
 bool CommandProcessor::is_opening(const std::string &command) const {
     return command.size() == 1 && command.front() == open_;
