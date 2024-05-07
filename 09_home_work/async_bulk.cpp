@@ -3,7 +3,8 @@
 
 namespace async {
 
-Connection::Connection(std::size_t bulk) : cmd_proc_(bulk, ss_) {}
+Connection::Connection(std::size_t bulk)
+    : cmd_proc_(bulk, ss_, '{', '}') {}
 
 void Connection::subscribe(std::shared_ptr<IObserver> observer) {
     cmd_proc_.subscribe(observer);
@@ -29,7 +30,8 @@ AsyncBulk &AsyncBulk::getInstance() {
     return instance;
 }
 
-void AsyncBulk::update(Connection *connection, const char *data, std::size_t size) {
+void AsyncBulk::update(Connection *connection, const char *data,
+                       std::size_t size) {
     std::unique_lock lock(connection_mtx_);
     connections_[connection]->update(data, size);
 }
