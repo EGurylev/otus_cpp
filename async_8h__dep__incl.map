@@ -1,5 +1,9 @@
 <map id="09_home_work/async.h" name="09_home_work/async.h">
-<area shape="rect" id="node1" title=" " alt="" coords="119,5,293,32"/>
+<area shape="rect" id="node1" title=" " alt="" coords="340,5,515,32"/>
 <area shape="rect" id="node2" href="$async_8cpp.html" title=" " alt="" coords="5,80,196,107"/>
 <area shape="rect" id="node3" href="$09__home__work_2main_8cpp.html" title=" " alt="" coords="220,80,405,107"/>
+<area shape="rect" id="node4" href="$bulk__router_8cpp.html" title=" " alt="" coords="429,80,655,107"/>
+<area shape="rect" id="node5" href="$bulk__server_8h.html" title=" " alt="" coords="679,80,891,107"/>
+<area shape="rect" id="node6" href="$bulk__server_8cpp.html" title=" " alt="" coords="555,155,782,181"/>
+<area shape="rect" id="node7" href="$10__home__work_2main_8cpp.html" title=" " alt="" coords="807,155,992,181"/>
 </map>
