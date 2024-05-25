@@ -22,6 +22,7 @@ add_subdirectory(07_home_work)
 add_subdirectory(08_home_work)
 add_subdirectory(09_home_work)
 add_subdirectory(10_home_work)
+add_subdirectory(11_home_work)
 
 enable_testing()
 add_subdirectory(tests)

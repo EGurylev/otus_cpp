@@ -1,5 +1,6 @@
 add_executable(unittest test_version.cpp test_ip_adress.cpp
-    test_allocator.cpp test_matrix.cpp test_bulk.cpp test_bayan.cpp)
+    test_allocator.cpp test_matrix.cpp test_bulk.cpp test_bayan.cpp
+    test_database_command_processor.cpp)
 
 target_compile_options(unittest PRIVATE
         -Wall -Wextra -pedantic -Werror
@@ -20,10 +21,12 @@ target_include_directories(unittest
     PRIVATE "${CMAKE_SOURCE_DIR}/06_home_work"
     PRIVATE "${CMAKE_SOURCE_DIR}/07_home_work"
     PRIVATE "${CMAKE_SOURCE_DIR}/08_home_work"
+    PRIVATE "${CMAKE_SOURCE_DIR}/11_home_work"
     PRIVATE "${CMAKE_CURRENT_BINARY_DIR}"
 )
 
-target_link_libraries(unittest helloworld ip_filter_lib bulk_lib bayan_lib)
+target_link_libraries(unittest helloworld ip_filter_lib bulk_lib
+    bayan_lib database)
 
 add_subdirectory(googletest)
 
