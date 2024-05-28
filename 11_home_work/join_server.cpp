@@ -11,14 +11,14 @@ void Session::do_read() {
     auto self(shared_from_this());
     socket_.async_read_some(
         boost::asio::buffer(data_, max_length),
-        [this, self](boost::system::error_code ec, std::size_t length) {
+        [this, self](boost::system::error_code ec, std::size_t /*length*/) {
             if (!ec) {
-                do_write(length);
+                auto response{command_processor_.process(data_)};
+                std::fill(data_, data_ + max_length, 0);
+                std::copy(response.begin(), response.end(), data_);
+                do_write(response.size());
             }
         });
-    auto response{command_processor_.process(data_)};
-    std::fill(data_, data_ + max_length, 0);
-    std::copy(response.begin(), response.end(), data_);
 }
 
 void Session::do_write(std::size_t length) {
@@ -27,10 +27,10 @@ void Session::do_write(std::size_t length) {
         socket_, boost::asio::buffer(data_, length),
         [this, self](boost::system::error_code ec, std::size_t /*length*/) {
             if (!ec) {
+                std::fill(data_, data_ + max_length, 0);
                 do_read();
             }
         });
-    std::fill(data_, data_ + max_length, 0);
 }
 
 JoinServer::JoinServer(boost::asio::io_service &io_service, uint_least16_t port)
