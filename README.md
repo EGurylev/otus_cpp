@@ -1,1 +1,12 @@
 # Репозиторий для домашних работ по курсу C++ Developer. Professional
+1. [Создание сборочной фермы](https://github.com/EGurylev/otus_cpp/tree/main/01_home_work)
+2. [Фильтрация IP-адресов](https://github.com/EGurylev/otus_cpp/tree/main/02_home_work)
+3. [Аллокатор](https://github.com/EGurylev/otus_cpp/tree/main/03_home_work)
+4. [Печать IP-адреса. SFINAE.](https://github.com/EGurylev/otus_cpp/tree/main/04_home_work)
+5. [Графический векторный редактор (Model View Controller)](https://github.com/EGurylev/otus_cpp/tree/main/05_home_work)
+6. [Бесконечная разреженная матрица](https://github.com/EGurylev/otus_cpp/tree/main/06_home_work)
+7. [Программа для пакетной обработки команд](https://github.com/EGurylev/otus_cpp/tree/main/07_home_work)
+8. [Баян](https://github.com/EGurylev/otus_cpp/tree/main/08_home_work)
+9. [Асинхронная программа для пакетной обработки команд](https://github.com/EGurylev/otus_cpp/tree/main/09_home_work)
+10. [Сетевая асинхронная программа для пакетной обработки команд](https://github.com/EGurylev/otus_cpp/tree/main/10_home_work)
+11. [Асинхронный сервер операций пересечения и симметрической разницы](https://github.com/EGurylev/otus_cpp/tree/main/11_home_work)

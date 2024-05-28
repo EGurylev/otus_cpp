@@ -13,6 +13,7 @@ class CommandProcessor {
     std::string process_truncate(const std::vector<std::string> &tokens);
     std::string process_intercestion() const;
     std::string process_symmetric_difference() const;
+    std::string convert_rows(const std::vector<Row>& rows) const;
 
     database::TwoTableDataBase database_;
 };

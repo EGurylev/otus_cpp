@@ -36,10 +36,21 @@ CommandProcessor::process_truncate(const std::vector<std::string> &tokens) {
     return "OK";
 }
 
-std::string CommandProcessor::process_intercestion() const { return ""; }
+std::string CommandProcessor::convert_rows(const std::vector<Row> &rows) const {
+    std::string result;
+    for (auto &row : rows) {
+        result += std::string(row) + "\n";
+    }
+    result += "OK";
+    return result;
+}
+
+std::string CommandProcessor::process_intercestion() const {
+    return convert_rows(database_.intersection());
+}
 
 std::string CommandProcessor::process_symmetric_difference() const {
-    return "";
+    return convert_rows(database_.symmetric_difference());
 }
 
 std::string CommandProcessor::process(const std::string &command) {
@@ -48,6 +59,9 @@ std::string CommandProcessor::process(const std::string &command) {
     std::string token;
     while (std::getline(ss, token, ' ')) {
         tokens.push_back(std::move(token));
+    }
+    if (tokens.empty()) {
+        return "";
     }
 
     try {
@@ -64,7 +78,7 @@ std::string CommandProcessor::process(const std::string &command) {
         }
 
     } catch (std::out_of_range &e) {
-        return "ERR command incoplete";
+        return "ERR command incomplete";
     } catch (std::exception &e) {
         std::cout << "ERR " + std::string(e.what()) << std::endl;
         return "ERR " + std::string(e.what());
