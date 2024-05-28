@@ -1,8 +1,4 @@
 var searchData=
 [
-  ['value_180',['value',['../structall__same__type__tuple.html#aad869e7165af7879314bba6caa974329',1,'all_same_type_tuple::value()'],['../structCommandProcessor_1_1BlockEdge.html#a70630a15edb0cf4d02fb1b595802b17a',1,'CommandProcessor::BlockEdge::value()']]],
-  ['value_5ftype_181',['value_type',['../classpool__allocator.html#a0b6f30b9b0a9defa9dae57dc9eb76aac',1,'pool_allocator::value_type()'],['../structCommandBlock_1_1const__iterator.html#a2ea9ad0f0ab4314e25d19f941d89cad3',1,'CommandBlock::const_iterator::value_type()']]],
-  ['version_182',['version',['../lib_8cpp.html#ae64f17a84dc9c7144d1036498ff26fd9',1,'version():&#160;lib.cpp'],['../lib_8h.html#ae64f17a84dc9c7144d1036498ff26fd9',1,'version():&#160;lib.cpp']]],
-  ['view_183',['view',['../namespaceview.html',1,'']]],
-  ['view_2eh_184',['view.h',['../view_8h.html',1,'']]]
+  ['update_201',['update',['../classview_1_1GUI.html#a3b5f8c05f6f5b7c24060ed1f81a56884',1,'view::GUI::update()'],['../classIObserver.html#a3518d68d68c20c54310295bf136b3e1d',1,'IObserver::update()'],['../classConsoleLogger.html#aa96aa5531a73448115b474cbfe9b8a4e',1,'ConsoleLogger::update()'],['../classFileLogger.html#a05f0ba4117da6f10ad551533e7705f9b',1,'FileLogger::update()'],['../classasync_1_1Connection.html#a25135d4c328f8a691d4e22c785d6ceb6',1,'async::Connection::update()'],['../classasync_1_1AsyncBulk.html#a9e3296e036bc19dff95b12bdf531d64e',1,'async::AsyncBulk::update()'],['../classasync_1_1AsyncConsoleLogger.html#aea472ff3bc8d8e511882dc6257122209',1,'async::AsyncConsoleLogger::update()'],['../classasync_1_1AsyncDuoFileLogger.html#ab8047f179bd397079149c2cee9220184',1,'async::AsyncDuoFileLogger::update()']]]
 ];

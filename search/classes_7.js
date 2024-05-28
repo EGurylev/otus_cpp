@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['logic_225',['Logic',['../classcontroller_1_1Logic.html',1,'controller']]]
+  ['joinserver_258',['JoinServer',['../classJoinServer.html',1,'']]]
 ];

@@ -1,14 +1,9 @@
 var searchData=
 [
-  ['operator_20char_127',['operator char',['../structCommandProcessor_1_1BlockEdge.html#a99855c773460076abe7da47dbb35634b',1,'CommandProcessor::BlockEdge']]],
-  ['operator_21_3d_128',['operator!=',['../structCommandBlock_1_1const__iterator.html#a7940e7d7e8292acb3c360c32b9eb00e9',1,'CommandBlock::const_iterator']]],
-  ['operator_28_29_129',['operator()',['../structHashPath.html#ad451b58a3e327b8960e6e33673992033',1,'HashPath']]],
-  ['operator_2a_130',['operator*',['../structCommandBlock_1_1const__iterator.html#a176a1a60d3f7d77d8c693ecea269754d',1,'CommandBlock::const_iterator']]],
-  ['operator_2b_2b_131',['operator++',['../structCommandBlock_1_1const__iterator.html#a663cdbd4fd338f273bc92349fd6f2c77',1,'CommandBlock::const_iterator']]],
-  ['operator_2d_3e_132',['operator-&gt;',['../structCommandBlock_1_1const__iterator.html#a922b63e486897bf30c048c82953942bf',1,'CommandBlock::const_iterator']]],
-  ['operator_3c_3c_133',['operator&lt;&lt;',['../file__group_8h.html#a634919d837dfcf065225f65effe87736',1,'operator&lt;&lt;(std::ostream &amp;os, const std::unordered_map&lt; size_t, FileGroupManager::FileGroup &gt; &amp;groups):&#160;file_group.h'],['../file__group_8cpp.html#a094734ec981ff0a9e1199a7294c22775',1,'operator&lt;&lt;(std::ostream &amp;os, std::unordered_map&lt; size_t, FileGroupManager::FileGroup &gt; &amp;groups):&#160;file_group.cpp'],['../command__block_8h.html#aaae111137d4e376bc66f917ab204179e',1,'operator&lt;&lt;(std::ostream &amp;os, const CommandBlock &amp;cmd_block):&#160;command_block.cpp'],['../command__block_8cpp.html#aaae111137d4e376bc66f917ab204179e',1,'operator&lt;&lt;(std::ostream &amp;os, const CommandBlock &amp;cmd_block):&#160;command_block.cpp'],['../ip__adress__pool_8h.html#ac66fe011dac444f661a89b20a46f363e',1,'operator&lt;&lt;(std::ostream &amp;os, const std::vector&lt; IPAdress &gt; &amp;pool):&#160;ip_adress_pool.cpp'],['../ip__adress__pool_8h.html#ade5c2eabbb47b9b36f289a0139bf664b',1,'operator&lt;&lt;(std::ostream &amp;os, const IPAdress &amp;arr):&#160;ip_adress_pool.cpp'],['../ip__adress__pool_8cpp.html#ac66fe011dac444f661a89b20a46f363e',1,'operator&lt;&lt;(std::ostream &amp;os, const std::vector&lt; IPAdress &gt; &amp;pool):&#160;ip_adress_pool.cpp'],['../ip__adress__pool_8cpp.html#ade5c2eabbb47b9b36f289a0139bf664b',1,'operator&lt;&lt;(std::ostream &amp;os, const IPAdress &amp;arr):&#160;ip_adress_pool.cpp']]],
-  ['operator_3d_134',['operator=',['../classasync_1_1AsyncBulk.html#ac732f4a88aa3e697b1977d01711ef2b8',1,'async::AsyncBulk']]],
-  ['operator_3d_3d_135',['operator==',['../structCommandBlock_1_1const__iterator.html#acc23b862dd0fc90fb4bd8861f70915e3',1,'CommandBlock::const_iterator']]],
-  ['operator_5b_5d_136',['operator[]',['../classFileGroupManager_1_1FileGroup.html#aea9988c8f5e9b161efc79ba8d4a3e720',1,'FileGroupManager::FileGroup::operator[]()'],['../classMatrix.html#a44280f9c7c20d29eac4d22d6edcf15a4',1,'Matrix::operator[]()'],['../classMatrixImpl_1_1Row.html#a382ab6ac90a1090bd761dcd6cb5313bc',1,'MatrixImpl::Row::operator[]()']]],
-  ['other_137',['other',['../structpool__allocator_1_1rebind.html#aa07c30b4771af2fd045e2b5e6a93bcc4',1,'pool_allocator::rebind']]]
+  ['name_138',['name',['../classview_1_1Action.html#a6491daae6a05ca3cf6a78a686ebe15e2',1,'view::Action']]],
+  ['name_5fa_139',['name_a',['../structdatabase_1_1Row.html#a48bfda767dd488bea802464179268e8e',1,'database::Row']]],
+  ['name_5fb_140',['name_b',['../structdatabase_1_1Row.html#ad3eac118cb0b5ecbce69ef70e53b5565',1,'database::Row']]],
+  ['new_5fdocument_141',['new_document',['../classview_1_1GUI.html#aab7c443516c5e98eb6acb954e831ed53',1,'view::GUI']]],
+  ['newdocument_142',['NewDocument',['../namespaceview.html#a3ed9452a7e31332dde346f7183ef9f4ca809e6c28dbce7880776468f49dd8cc41',1,'view']]],
+  ['next_5faction_143',['next_action',['../classview_1_1GUI.html#af414d613300be06eee8c8bdd3d0c479a',1,'view::GUI']]]
 ];

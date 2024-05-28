@@ -1,16 +1,14 @@
 var searchData=
 [
-  ['session_165',['Session',['../classSession.html',1,'Session'],['../classSession.html#a4922086ec35948d9ac88cc14f50ba527',1,'Session::Session()']]],
-  ['set_5fblock_5fsize_166',['set_block_size',['../classFileHandler.html#a11fcd56eb9875e9d25f11ee2898edb29',1,'FileHandler']]],
-  ['set_5fchecksum_167',['set_checksum',['../classFileHandler.html#a7ad6ba2abeda573c9f7dc5478118fd4a',1,'FileHandler']]],
-  ['set_5find_168',['set_ind',['../classMatrixImpl_1_1Row.html#aecee99b7be9c984af741ab1d8acdd68a',1,'MatrixImpl::Row']]],
-  ['sha1_169',['sha1',['../file__handler_8h.html#a06b5e1d0b960a8ac8adb8a4150ad6b50a74a89174426b40307102e165374ab8ab',1,'file_handler.h']]],
-  ['simple_5fforward_5flist_170',['simple_forward_list',['../classsimple__forward__list.html',1,'simple_forward_list&lt; T, Allocator &gt;'],['../classsimple__forward__list.html#a26663446296c8a7371990ebf285ed40d',1,'simple_forward_list::simple_forward_list(simple_forward_list &amp;&amp;other)=delete'],['../classsimple__forward__list.html#a2880b305bf93eba303074402744731d8',1,'simple_forward_list::simple_forward_list(const simple_forward_list &amp;other)=delete'],['../classsimple__forward__list.html#a468b8979c687a93855202ccca64ae0e4',1,'simple_forward_list::simple_forward_list()']]],
-  ['simple_5fforward_5flist_2eh_171',['simple_forward_list.h',['../simple__forward__list_8h.html',1,'']]],
-  ['size_172',['size',['../classsimple__forward__list.html#a63e1481a8003b3a9ce7e78d7ab5a5057',1,'simple_forward_list::size()'],['../classMatrixImpl.html#a08dfa9f335f7ec2304a7acc608633605',1,'MatrixImpl::size()'],['../classMatrix.html#ae9e42cafafa13ebcf0005b4ad1d92fad',1,'Matrix::size()'],['../classCommandBlock.html#ad6e5802183bdba4c98f7fca594674aa4',1,'CommandBlock::size()'],['../classFileHandler.html#a0c6b2b20d2cf7a6a27b9f7259dee4e0a',1,'FileHandler::size()']]],
-  ['sort_5freverse_173',['sort_reverse',['../classIPAdressPool.html#a34862feb367e76ce053dd90c93a632c0',1,'IPAdressPool']]],
-  ['square_174',['Square',['../classview_1_1Square.html',1,'view']]],
-  ['start_175',['start',['../classSession.html#a47baf956cead0046fcbac45c572c70d3',1,'Session']]],
-  ['stop_176',['stop',['../classasync_1_1AsyncConsoleLogger.html#a270b6c85563f05440624dc06fddaa098',1,'async::AsyncConsoleLogger::stop()'],['../classasync_1_1AsyncDuoFileLogger.html#a31af8f5fc99890f4cf05bb0065c35fad',1,'async::AsyncDuoFileLogger::stop()']]],
-  ['subscribe_177',['subscribe',['../classIObservable.html#a2cbe1e6d55594e74e8a9856c76b32edf',1,'IObservable::subscribe()'],['../classCommandProcessor.html#ad192029903dc7a21083fdbedf0f6a25b',1,'CommandProcessor::subscribe()'],['../classasync_1_1Connection.html#a8a568f48039953c8532ffb8e2fd1ae19',1,'async::Connection::subscribe()']]]
+  ['read_173',['read',['../classIPAdressPool.html#aeb74f1df9308238f0b44a9f326897db9',1,'IPAdressPool']]],
+  ['readme_2emd_174',['README.md',['../README_8md.html',1,'']]],
+  ['rebind_175',['rebind',['../structpool__allocator_1_1rebind.html',1,'pool_allocator']]],
+  ['receive_176',['receive',['../namespaceasync.html#aa1b54e89e951488a8dd79e720f3d8f8b',1,'async']]],
+  ['remove_5fconnection_177',['remove_connection',['../classasync_1_1AsyncBulk.html#ae23e43edffabcddca111e15b8e8dd8fa',1,'async::AsyncBulk']]],
+  ['remove_5fprimitive_178',['remove_primitive',['../classmodel_1_1Core.html#a0f2f64b6f52e4aec0902ae334f40636e',1,'model::Core::remove_primitive()'],['../classview_1_1GUI.html#a618b39d7ae90ee9e7c582fe83a8bf19f',1,'view::GUI::remove_primitive()']]],
+  ['removeprimitive_179',['RemovePrimitive',['../namespaceview.html#a3ed9452a7e31332dde346f7183ef9f4ca16918610774a35aa167084e54fe8d479',1,'view']]],
+  ['row_180',['Row',['../structdatabase_1_1Row.html',1,'database::Row'],['../classMatrixImpl_1_1Row.html',1,'MatrixImpl&lt; T, DefaultValue &gt;::Row'],['../classMatrixImpl_1_1Row.html#aa2873b4b681a901dca466b01c49964a4',1,'MatrixImpl::Row::Row()=default'],['../classMatrixImpl_1_1Row.html#a9459a117ff233c2d8304f5cf243c1198',1,'MatrixImpl::Row::Row(size_t row, std::shared_ptr&lt; MatrixImpl &gt; matrix)']]],
+  ['rows_5fbegin_181',['rows_begin',['../classMatrixImpl.html#a2e552af96e18bce0fd7c67f9b766018c',1,'MatrixImpl']]],
+  ['rows_5fend_182',['rows_end',['../classMatrixImpl.html#ad86d364290b31810ff9b87e36e2e891c',1,'MatrixImpl']]],
+  ['run_5fallocator_2ecpp_183',['run_allocator.cpp',['../run__allocator_8cpp.html',1,'']]]
 ];

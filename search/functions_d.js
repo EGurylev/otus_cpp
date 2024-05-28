@@ -1,14 +1,12 @@
 var searchData=
 [
-  ['pool_5fallocator_349',['pool_allocator',['../classpool__allocator.html#a7c81b16fe680884cbf542eee3b4d8bb7',1,'pool_allocator::pool_allocator()'],['../classpool__allocator.html#a04d9f9812384fe4dcbb7ce3616dc499b',1,'pool_allocator::pool_allocator(const pool_allocator &amp;other)=delete'],['../classpool__allocator.html#ab2aee5585238652a674e0323bd96c3e3',1,'pool_allocator::pool_allocator(const pool_allocator &amp;&amp;other)=delete']]],
-  ['primitive_350',['Primitive',['../classview_1_1Primitive.html#a11962bf626725834bab76d91cdc5fb1e',1,'view::Primitive']]],
-  ['print_351',['print',['../classIPAdressPool.html#a2b6fc8932df522d1c17d6d43fc99ef8e',1,'IPAdressPool']]],
-  ['print_5fduplicates_352',['print_duplicates',['../classFileGroupManager.html#a32242792b778a582a28f3ca7019850ab',1,'FileGroupManager']]],
-  ['print_5fip_353',['print_ip',['../print__ip_8cpp.html#a667e8e5af6201b75410c458b5dd66878',1,'print_ip.cpp']]],
-  ['print_5ftuple_5fip_354',['print_tuple_ip',['../print__ip_8cpp.html#a21280506bd606c24fb7f563b32a338d8',1,'print_ip.cpp']]],
-  ['process_355',['process',['../classCommandProcessor.html#af2b2acd64ae9e39fb0aa5bfbdd428209',1,'CommandProcessor::process()'],['../classBulkRouter.html#a2598322121ecf0e3daf0069d33458531',1,'BulkRouter::process()']]],
-  ['process_5fconnection1_356',['process_connection1',['../09__home__work_2main_8cpp.html#add57b2c8cea2370310ce9fdc19cbe7bb',1,'main.cpp']]],
-  ['process_5fconnections23_357',['process_connections23',['../09__home__work_2main_8cpp.html#a08bb3a010d69412af1c730be7c9a35a4',1,'main.cpp']]],
-  ['push_358',['push',['../classCommandBlock.html#a2dadf65f3226afeb16b4de96d862bbc8',1,'CommandBlock']]],
-  ['push_5ffront_359',['push_front',['../classsimple__forward__list.html#a41e7c785ab6dbdd584a121a54a03a9ca',1,'simple_forward_list']]]
+  ['operator_20char_390',['operator char',['../structCommandProcessor_1_1BlockEdge.html#a99855c773460076abe7da47dbb35634b',1,'CommandProcessor::BlockEdge']]],
+  ['operator_28_29_391',['operator()',['../structHashPath.html#ad451b58a3e327b8960e6e33673992033',1,'HashPath']]],
+  ['operator_2a_392',['operator*',['../structCommandBlock_1_1const__iterator.html#a176a1a60d3f7d77d8c693ecea269754d',1,'CommandBlock::const_iterator']]],
+  ['operator_2b_2b_393',['operator++',['../structCommandBlock_1_1const__iterator.html#a663cdbd4fd338f273bc92349fd6f2c77',1,'CommandBlock::const_iterator']]],
+  ['operator_2d_3e_394',['operator-&gt;',['../structCommandBlock_1_1const__iterator.html#a922b63e486897bf30c048c82953942bf',1,'CommandBlock::const_iterator']]],
+  ['operator_3c_3c_395',['operator&lt;&lt;',['../file__group_8h.html#a634919d837dfcf065225f65effe87736',1,'operator&lt;&lt;(std::ostream &amp;os, const std::unordered_map&lt; size_t, FileGroupManager::FileGroup &gt; &amp;groups):&#160;file_group.h'],['../file__group_8cpp.html#a094734ec981ff0a9e1199a7294c22775',1,'operator&lt;&lt;(std::ostream &amp;os, std::unordered_map&lt; size_t, FileGroupManager::FileGroup &gt; &amp;groups):&#160;file_group.cpp'],['../command__block_8h.html#aaae111137d4e376bc66f917ab204179e',1,'operator&lt;&lt;(std::ostream &amp;os, const CommandBlock &amp;cmd_block):&#160;command_block.cpp'],['../ip__adress__pool_8cpp.html#ade5c2eabbb47b9b36f289a0139bf664b',1,'operator&lt;&lt;(std::ostream &amp;os, const IPAdress &amp;arr):&#160;ip_adress_pool.cpp'],['../ip__adress__pool_8cpp.html#ac66fe011dac444f661a89b20a46f363e',1,'operator&lt;&lt;(std::ostream &amp;os, const std::vector&lt; IPAdress &gt; &amp;pool):&#160;ip_adress_pool.cpp'],['../ip__adress__pool_8h.html#ade5c2eabbb47b9b36f289a0139bf664b',1,'operator&lt;&lt;(std::ostream &amp;os, const IPAdress &amp;arr):&#160;ip_adress_pool.cpp'],['../ip__adress__pool_8h.html#ac66fe011dac444f661a89b20a46f363e',1,'operator&lt;&lt;(std::ostream &amp;os, const std::vector&lt; IPAdress &gt; &amp;pool):&#160;ip_adress_pool.cpp'],['../command__block_8cpp.html#aaae111137d4e376bc66f917ab204179e',1,'operator&lt;&lt;(std::ostream &amp;os, const CommandBlock &amp;cmd_block):&#160;command_block.cpp']]],
+  ['operator_3d_396',['operator=',['../classasync_1_1AsyncBulk.html#ac732f4a88aa3e697b1977d01711ef2b8',1,'async::AsyncBulk']]],
+  ['operator_5b_5d_397',['operator[]',['../classFileGroupManager_1_1FileGroup.html#aea9988c8f5e9b161efc79ba8d4a3e720',1,'FileGroupManager::FileGroup::operator[]()'],['../classMatrix.html#a44280f9c7c20d29eac4d22d6edcf15a4',1,'Matrix::operator[]()'],['../classMatrixImpl_1_1Row.html#a382ab6ac90a1090bd761dcd6cb5313bc',1,'MatrixImpl::Row::operator[]()']]],
+  ['string_398',['string',['../structdatabase_1_1Row.html#a639adbd76ede33b451acf977dda239b6',1,'database::Row']]]
 ];
