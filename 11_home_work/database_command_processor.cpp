@@ -55,7 +55,7 @@ std::string CommandProcessor::process_symmetric_difference() const {
 
 std::string CommandProcessor::process(const std::string &command) {
     std::string trimmed_command{command};
-    trimmed_command.pop_back();//remove last '\n'
+    trimmed_command.pop_back(); // remove last '\n'
     std::stringstream ss(trimmed_command);
     std::vector<std::string> tokens;
     std::string token;
